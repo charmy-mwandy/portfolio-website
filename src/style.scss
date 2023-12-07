@@ -103,6 +103,7 @@ a{
   cursor: pointer;
   display: none;
   z-index: 4;
+  margin-top: 70px;
 }
 
 .bar {
@@ -243,6 +244,7 @@ a{
       @include mediaQuery(600px){
         font-size: 37px;
         width: 100%;
+      
        }
        @include mediaQuery(768px, 601px){
         font-size: 3em;
@@ -277,6 +279,10 @@ a{
       font-size: 20px;
       margin-bottom: 60px;
       letter-spacing: 1.9;
+      @include mediaQuery(600px){
+        margin-top: 90px;
+      
+       }
 
       &::before{
         content: '<p>';
