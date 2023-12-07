@@ -623,7 +623,7 @@ body {
 }
 #skill .skill-txt .skill-para1 {
   color: rgba(243, 240, 240, 0.833);
-  font-size: 18px;
+  font-size: calc(0.2rem + 1vw);
   width: 59%;
   line-height: 1.4;
 }
@@ -631,7 +631,6 @@ body {
   #skill .skill-txt .skill-para1 {
     font-size: 16px;
     width: 95%;
-    font-size: calc(1rem + 1vw);
   }
 }
 @media (max-width: 768px) {
