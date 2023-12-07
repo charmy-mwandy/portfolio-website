@@ -171,7 +171,7 @@ a{
       font-size: 70px;
       line-height: 1.4;
       @include mediaQuery(600px){
-        font-size: 40px;
+        font-size: 37px;
         width: 100%;
        }
        @include mediaQuery(768px, 601px){
@@ -283,7 +283,10 @@ a{
   position: absolute;
   left: 25%;
   top: 15%;
-  @include mediaQuery(768px){
+  @include mediaQuery(600px){
+    left: 8%;
+   }
+   @include mediaQuery(768px, 601px){
     left: 23%;
     
   }
@@ -360,7 +363,10 @@ a{
   position: absolute;
   left: 26%;
   top: 13%;
-  @include mediaQuery(768px){
+  @include mediaQuery(600px){
+    left: 8%;
+   }
+   @include mediaQuery(768px, 601px){
     left: 30%;
      top: 18%;
     
@@ -575,7 +581,10 @@ a{
   position: absolute;
   left: 21%;
   top: 10%;
-  @include mediaQuery(768px){
+  @include mediaQuery(600px){
+    left: 8%;
+   }
+   @include mediaQuery(768px, 601px){
 
     left: 19%;
        
@@ -662,7 +671,10 @@ a{
   position: absolute;
   left: 27%;
   top: 13%;
-  @include mediaQuery(768px){
+  @include mediaQuery(600px){
+    left: 8%;
+   }
+   @include mediaQuery(768px, 601px){
     left: 20%;
     
      overflow-y: hidden;
