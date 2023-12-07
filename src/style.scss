@@ -231,13 +231,6 @@ a{
 
 
 
-
-
-
-
-
-
-
 //HERO SECTION//
 
 .hero{
@@ -521,7 +514,7 @@ a{
     margin-bottom: 55px;
     @include mediaQuery(768px){
       font-size: 16px;
-      width: 90%;
+      width: 95%;
       
     }
 
@@ -556,7 +549,8 @@ a{
     line-height: 1.4;
     @include mediaQuery(768px){
       font-size: 16px;
-      width: 90%;
+      width: 95%;
+      font-size: 16px;
       
     }
     

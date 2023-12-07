@@ -24,7 +24,7 @@ const Navbar = () => {
 
 
     const iconStyle = {
-        fontSize: '3em', // Adjust the font size
+        fontSize: '2em', // Adjust the font size
         color: '#FFC448', // Set the desired color
       
       };
