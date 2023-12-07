@@ -6,7 +6,7 @@ const WorkImage = ({ src, alt, link }) => {
     <a href={link} target="_blank" rel="noopener noreferrer" className="work-image-container">
       <img className="workfirst" src={src} alt={alt} />
       <div className="overlay">
-        <span>View Details</span>
+        <span>Visit Website</span>
       </div>
     </a>
   );

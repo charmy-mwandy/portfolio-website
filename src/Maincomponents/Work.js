@@ -23,8 +23,8 @@ const Work = () => {
       <WorkImage src="images/Bakersinn.png" alt="worksecondimage" link="https://bakercharmy.vercel.app/" />
       <WorkImage src="images/Load.png" alt="workforthimage" link="https://charmaine-loadhaul.netlify.app" />
       <WorkImage src="images/resellme.png" alt="workfifthimage" link="https://reselle-project-charmy.vercel.app" />
-      <WorkImage src="images/nowall.png" alt="worksixthimage" link="https://charmaine-nowalls.netlify.app" />
-      <WorkImage src="images/mobi_pic.png" alt="workfirstimage" link="https://charmaine-mobi.netlify.app" />
+      <WorkImage src="images/no_walls.png" alt="worksixthimage" link="https://charmaine-nowalls.netlify.app" />
+      <WorkImage src="images/mobi.png" alt="workfirstimage" link="https://charmaine-mobi.netlify.app" />
     </div>
    
   

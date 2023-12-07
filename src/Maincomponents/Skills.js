@@ -37,7 +37,7 @@ const Skills = () => {
 
         <h1>
            <AnimatedLetters letterClass={letterClass}
-            strArray={['S','k','i','l','l','s',' ','&',' ', ' ',' ','E','x','p','e','r','i','n','c','e']} 
+            strArray={['S','k','i','l','l','s',' ','&',' ', ' ',' ','E','x','p','e','r','i','e','n','c','e']} 
             idx={15}/>
         </h1>
         <p className="skill-para">In my tech journey, I have acquired a diverse technical skill set that spans multiple dimensions of software development.

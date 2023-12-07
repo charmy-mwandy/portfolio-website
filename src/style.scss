@@ -32,7 +32,8 @@ body {
   left: 0;
   z-index: 3;
   min-height: 500px;
-  @include mediaQuery(576px){
+  @include mediaQuery(768px){
+   
     width: 130px;
   }
 
@@ -81,83 +82,15 @@ a{
   }
 
   .logos{
-    // background-color: pink;
     display: flex;
     justify-content: space-around;
     padding-top: 60px;
-
-    // .logosfirst{
-      
-    //   @include mediaQuery(576px){
-    //     width: 25px;
-    //     height: 25px;
-    //   }
-    // }
    
   }
 
-  @include mediaQuery(576px) {
-    width: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    overflow-x: hidden;
-    transition: 0.5s;
-    background-color: black;
-    display: none; // initially hide on small screens
 
-    &.open {
-      width: 230px;
-      display: block; // show when open
-    }
-
-    // ... existing styles ...
-  }
-
-  @include mediaQuery(900px) {
-    display: none; // hide on larger screens
-  }
 }
 
-//nav-menu
-
-.nav-menu-icon {
-  display: none;
-  cursor: pointer;
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 4;
-
-  .bar {
-    height: 5px;
-    width: 30px;
-    background-color: #fff;
-    margin: 6px 0;
-    transition: 0.4s;
-  }
-
-  &.open {
-    .bar:nth-child(1) {
-      transform: rotate(-45deg) translate(-5px, 6px);
-    }
-    .bar:nth-child(2) {
-      opacity: 0;
-    }
-    .bar:nth-child(3) {
-      transform: rotate(45deg) translate(-5px, -6px);
-    }
-  }
-
-  @include mediaQuery(576px) {
-    display: block;
-  }
-
-  @include mediaQuery(900px) {
-    display: block; // show on larger screens
-  }
-}
 
 
 .page{
@@ -173,7 +106,7 @@ a{
 
     .bgfirst{
       width: 39%;
-      @include mediaQuery(576px){
+      @include mediaQuery(768px){
         display: none;
       }
     }
@@ -190,7 +123,7 @@ a{
     position:absolute;
     bottom: 70px;
     left: 350px;
-    @include mediaQuery(576px){
+    @include mediaQuery(768px){
       left: 170px;
     }
   }
@@ -211,9 +144,10 @@ a{
     animation-delay: 1s;
     left: 30%;
     top: 15%;
-    @include mediaQuery(576px){
+    @include mediaQuery(768px){
       left: 34%;
-    top: 25%;
+      top: 25%;
+     // background-color: palevioletred;
       
     }
   .hero-txt{
@@ -221,8 +155,8 @@ a{
       color: white;
       font-size: 70px;
       line-height: 1.4;
-      @include mediaQuery(576px){
-        font-size: 39px;
+      @include mediaQuery(768px){
+        font-size: 3em;
         line-height: 1.4;
       }
 
@@ -324,21 +258,21 @@ a{
    }
  }
 
-
+//About section
 
 .about{
   position: absolute;
   left: 25%;
   top: 15%;
-  @include mediaQuery(576px){
-    left: 38%;
+  @include mediaQuery(768px){
+    left: 20%;
     
   }
 
   h6{
     color: white;
     font-size: 20px;
-    @include mediaQuery(576px){
+    @include mediaQuery(768px){
       font-size: 16px;
     }
   }
@@ -346,7 +280,7 @@ a{
   h1{
     color: rgb(255, 196, 72);
     font-size: 45px;
-    @include mediaQuery(576px){
+    @include mediaQuery(768px){
       font-size: 23px;
     }
   }
@@ -357,7 +291,7 @@ a{
     padding-bottom: 40px;
     line-height: 1.4;
     font-size: 18px;
-    @include mediaQuery(576px){
+    @include mediaQuery(768px){
       font-size: 16px;
       width: 100%;
       padding-bottom: 25px;
@@ -392,7 +326,7 @@ a{
     .bgsecond{
       width: 45%;
       height: 45%;
-      @include mediaQuery(576px){
+      @include mediaQuery(768px){
         display: none;
       }
     }
@@ -405,11 +339,11 @@ a{
 #skill{
   display: flex;
   position: absolute;
-  left: 28%;
+  left: 26%;
   top: 13%;
-  @include mediaQuery(576px){
-    left: 34%;
-     top: 25%;
+  @include mediaQuery(768px){
+    left: 30%;
+     top: 18%;
     
   }
 .skill-txt{
@@ -419,8 +353,8 @@ a{
     color: rgb(255, 196, 72);
     font-size: 50px;
    // width: 22%;
-   // margin-bottom: 70px;
-    @include mediaQuery(576px){
+    margin-bottom: 60px;
+    @include mediaQuery(768px){
       font-size: 30px;
       
     }
@@ -452,11 +386,12 @@ a{
   .skill-para{
     color: rgba(250, 248, 248, 0.829);
     font-size: 18px;
-    width: 50%;
+    width: 59%;
     line-height: 1.4;
     margin-bottom: 55px;
-    @include mediaQuery(576px){
-      font-size: 15px;
+    @include mediaQuery(768px){
+      font-size: 16px;
+      width: 100%;
       
     }
 
@@ -471,14 +406,14 @@ a{
      
      &::after{
      content: '</p>';
-      color:rgb(12, 155, 226);
+     color:rgb(110, 112, 113);
        opacity: 0.6;
        position:absolute;
        font-size: 16px;
        margin-top: 10px;
        margin-left: 10px;
-      /*  animation: fadeIn 1s 1.7s backwards;
-       opacity: 0.6; */
+       animation: fadeIn 1s 1.7s backwards;
+       opacity: 0.6; 
         
      } 
   }
@@ -487,8 +422,13 @@ a{
   .skill-para1{
     color: rgba(243, 240, 240, 0.833);
     font-size: 18px;
-    width: 50%;
+    width: 59%;
     line-height: 1.4;
+    @include mediaQuery(768px){
+      font-size: 16px;
+      width: 100%;
+      
+    }
     
 
     &::before{
@@ -531,11 +471,15 @@ a{
 }
 
 #myCanvasContainer{
- // background-color: aqua;
+
   position: absolute;
   left: 70%;
   top: 38%;
-  // z-index: 3;
+  @include mediaQuery(768px){
+   display: none;
+    
+  }
+
 
 .cubespinner{
   
@@ -606,6 +550,8 @@ a{
 }
 
 
+
+//Work section
 #work{
   position: absolute;
   left: 21%;
@@ -629,15 +575,23 @@ a{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; // Ensure equal spacing between the image containers
+  @include mediaQuery(768px){
+ display: grid;
+  grid-template-columns:(1fr 1fr);
+    
+  }
 }
 
-// WorkImage.scss
 
 .work-image-container {
   position: relative;
   margin: 10px;
   overflow: hidden;
   width: calc(33.33% - 20px); // Adjust width based on the number of images and margin
+  @include mediaQuery(768px){
+    width: calc(90%);
+    margin: 5px;
+     }
 
   .workfirst {
     width: 100%;
@@ -658,10 +612,11 @@ a{
     opacity: 0;
     transition: opacity 0.3s ease;
 
-    a {
+    span{
       color: #fff;
       text-decoration: none;
-      font-size: 16px;
+      font-size: 20px;
+      font-weight: 700;
     }
   }
 
