@@ -15,6 +15,7 @@ body {
   overflow-y: hidden;
 }
 
+/* Navbar styles */
 .nav-bar {
   padding-top: 30px;
   background-color: black;
@@ -26,16 +27,10 @@ body {
   z-index: 3;
   min-height: 500px;
 }
-@media (max-width: 768px) {
-  .nav-bar {
-    width: 130px;
-  }
-}
-@media (max-width: 600px) {
+@media (max-width: 576px) {
   .nav-bar {
     display: none;
-    height: 0;
-    width: 0px;
+    width: 130px;
   }
 }
 .nav-bar .logo {
@@ -86,12 +81,17 @@ body {
   padding-top: 60px;
 }
 
-/* Add these styles to your CSS */
+.nav-bar1 {
+  display: none;
+  align-items: center;
+  padding: 15px;
+  background-color: black;
+  color: white;
+}
+
 .nav-menu-icon {
   cursor: pointer;
   display: none;
-  z-index: 4;
-  margin-top: 70px;
 }
 
 .bar {
@@ -102,27 +102,52 @@ body {
   transition: 0.4s;
 }
 
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  margin: 0 15px;
+  font-size: 16px;
+}
+
+.logos a {
+  color: white;
+  margin: 0 10px;
+  font-size: 24px;
+}
+
 /* Media query for small screens */
 @media (max-width: 600px) {
-  .nav-bar ul {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 70px;
-    right: 20px;
-    background-color: black;
-    width: 100%;
-    z-index: 3; /* Set z-index to be below nav-menu-icon */
-  }
-  .nav-bar ul.show {
+  .nav-bar1 {
     display: flex;
   }
-  .nav-bar li {
-    margin-bottom: 10px;
+  .navbar {
+    display: none;
   }
   .nav-menu-icon {
     display: block;
-    padding-left: 450px;
+  }
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    display: none;
+  }
+  .nav-links.show {
+    display: flex;
+  }
+  .nav-links a {
+    margin: 10px 0;
   }
   .nav-menu-icon.open .bar:nth-child(1) {
     transform: rotate(-45deg) translate(-5px, 6px);
