@@ -629,13 +629,11 @@ body {
 }
 @media (max-width: 600px) {
   #skill .skill-txt .skill-para1 {
-    font-size: 16px;
     width: 95%;
   }
 }
 @media (max-width: 768px) {
   #skill .skill-txt .skill-para1 {
-    font-size: 16px;
     width: 95%;
     font-size: 16px;
   }
