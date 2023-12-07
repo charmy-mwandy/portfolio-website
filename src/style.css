@@ -31,6 +31,13 @@ body {
     width: 130px;
   }
 }
+@media (max-width: 600px) {
+  .nav-bar {
+    display: none;
+    height: 0;
+    width: 0px;
+  }
+}
 .nav-bar .logo {
   display: block;
   padding: 8px 0px;
@@ -85,6 +92,11 @@ body {
   position: absolute;
   padding-bottom: -800px;
 }
+@media (max-width: 600px) {
+  .page {
+    display: none;
+  }
+}
 .page .page-bg {
   display: flex;
   justify-content: flex-end;
@@ -126,9 +138,16 @@ body {
   left: 30%;
   top: 15%;
 }
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .hero {
-    left: 34%;
+    top: 25%;
+    left: 10%;
+    width: 80%;
+  }
+}
+@media (max-width: 768px) and (min-width: 601px) {
+  .hero {
+    left: 32%;
     top: 25%;
   }
 }
@@ -137,7 +156,13 @@ body {
   font-size: 70px;
   line-height: 1.4;
 }
-@media (max-width: 768px) {
+@media (max-width: 600px) {
+  .hero .hero-txt h1 {
+    font-size: 40px;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) and (min-width: 601px) {
   .hero .hero-txt h1 {
     font-size: 3em;
     line-height: 1.4;
@@ -365,7 +390,7 @@ body {
 }
 @media (max-width: 768px) {
   .about {
-    left: 20%;
+    left: 23%;
   }
 }
 .about h6 {
@@ -396,7 +421,7 @@ body {
 @media (max-width: 768px) {
   .about p {
     font-size: 16px;
-    width: 100%;
+    width: 90%;
     padding-bottom: 25px;
   }
 }
@@ -482,7 +507,7 @@ body {
 @media (max-width: 768px) {
   #skill .skill-txt .skill-para {
     font-size: 16px;
-    width: 100%;
+    width: 90%;
   }
 }
 #skill .skill-txt .skill-para::before {
@@ -513,7 +538,7 @@ body {
 @media (max-width: 768px) {
   #skill .skill-txt .skill-para1 {
     font-size: 16px;
-    width: 100%;
+    width: 90%;
   }
 }
 #skill .skill-txt .skill-para1::before {
@@ -619,6 +644,11 @@ body {
   left: 21%;
   top: 10%;
 }
+@media (max-width: 768px) {
+  #work {
+    left: 19%;
+  }
+}
 #work .work-txt h1 {
   color: rgb(255, 196, 72);
   font-size: 40px;
@@ -646,7 +676,7 @@ body {
 @media (max-width: 768px) {
   #work .work-image-container {
     width: 90%;
-    margin: 5px;
+    margin: 0px;
   }
 }
 #work .work-image-container .workfirst {
@@ -683,10 +713,9 @@ body {
   left: 27%;
   top: 13%;
 }
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .contact-page {
-    left: 34%;
-    top: 0%;
+    left: 20%;
     overflow-y: hidden;
     overflow: hidden;
   }
@@ -695,11 +724,6 @@ body {
   color: rgb(255, 196, 72);
   font-size: 50px;
   margin-bottom: 45px;
-}
-@media (max-width: 576px) {
-  .contact-page .contact-txt h1 {
-    font-size: 30px;
-  }
 }
 .contact-page .contact-txt h1::before {
   content: "<h1>";
@@ -726,6 +750,11 @@ body {
   width: 64%;
   line-height: 1.4;
   margin-bottom: 40px;
+}
+@media (max-width: 768px) {
+  .contact-page .contact-txt .contact-ptxt1 {
+    width: 80%;
+  }
 }
 .contact-page .contact-txt .contact-ptxt1::before {
   content: "<p>";
@@ -772,10 +801,6 @@ body {
 .contact-page .contact-txt .contact-form ul {
   padding: 0;
   margin: 0;
-  /*   @include mediaQuery(576px){
-       display:none;
-
-    } */
 }
 .contact-page .contact-txt .contact-form ul li {
   padding: 0;
@@ -795,6 +820,11 @@ body {
   margin-left: 20px;
   float: left;
   clear: none;
+}
+@media (max-width: 768px) {
+  .contact-page .contact-txt .contact-form ul li.contact-half {
+    width: 42%;
+  }
 }
 .contact-page .contact-txt .contact-form ul li.contact-half:first-child {
   margin-left: 0;
@@ -823,10 +853,20 @@ body {
   min-height: 150px;
   box-sizing: border-box;
 }
+@media (max-width: 768px) {
+  .contact-page .contact-txt .contact-form textarea {
+    width: 87%;
+  }
+}
 .contact-page .contact-txt .contact-form .butform {
   display: flex;
   justify-content: flex-end;
   padding-right: 138px;
+}
+@media (max-width: 768px) {
+  .contact-page .contact-txt .contact-form .butform {
+    padding-right: 93px;
+  }
 }
 .contact-page .contact-txt .contact-form .butform .form-button {
   color: white;
@@ -844,7 +884,7 @@ body {
   width: 70%;
   padding: 125px 0px 0px 0px;
 }
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .contact-page .contact-email {
     display: none;
   }
@@ -879,6 +919,11 @@ body {
   top: 150px;
   float: right;
   z-index: -2;
+}
+@media (max-width: 768px) {
+  .contact-page .contact-bg {
+    display: none;
+  }
 }
 .contact-page .contact-bg .contact-img {
   width: 350px;

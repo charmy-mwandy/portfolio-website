@@ -36,6 +36,12 @@ body {
    
     width: 130px;
   }
+  @include mediaQuery(600px){
+   
+   display: none;
+   height: 0;
+   width: 0px;
+  }
 
 .logo{
   display: block;
@@ -98,6 +104,9 @@ a{
   height: 100%;
   position: absolute;
   padding-bottom: -800px;
+  @include mediaQuery(600px){
+   display: none;
+   }
 
   .page-bg{
     display: flex;
@@ -144,8 +153,14 @@ a{
     animation-delay: 1s;
     left: 30%;
     top: 15%;
-    @include mediaQuery(768px){
-      left: 34%;
+    @include mediaQuery(600px){
+     // background-color: blue;
+      top: 25%;
+      left: 10%;
+      width: 80%;
+     }
+     @include mediaQuery(768px, 601px){
+      left: 32%;
       top: 25%;
      // background-color: palevioletred;
       
@@ -155,7 +170,11 @@ a{
       color: white;
       font-size: 70px;
       line-height: 1.4;
-      @include mediaQuery(768px){
+      @include mediaQuery(600px){
+        font-size: 40px;
+        width: 100%;
+       }
+       @include mediaQuery(768px, 601px){
         font-size: 3em;
         line-height: 1.4;
       }
@@ -265,7 +284,7 @@ a{
   left: 25%;
   top: 15%;
   @include mediaQuery(768px){
-    left: 20%;
+    left: 23%;
     
   }
 
@@ -293,7 +312,7 @@ a{
     font-size: 18px;
     @include mediaQuery(768px){
       font-size: 16px;
-      width: 100%;
+      width: 90%;
       padding-bottom: 25px;
     }
   }
@@ -391,7 +410,7 @@ a{
     margin-bottom: 55px;
     @include mediaQuery(768px){
       font-size: 16px;
-      width: 100%;
+      width: 90%;
       
     }
 
@@ -426,7 +445,7 @@ a{
     line-height: 1.4;
     @include mediaQuery(768px){
       font-size: 16px;
-      width: 100%;
+      width: 90%;
       
     }
     
@@ -556,6 +575,11 @@ a{
   position: absolute;
   left: 21%;
   top: 10%;
+  @include mediaQuery(768px){
+
+    left: 19%;
+       
+     }
 
 .work-txt{
   h1{
@@ -578,6 +602,7 @@ a{
   @include mediaQuery(768px){
  display: grid;
   grid-template-columns:(1fr 1fr);
+  
     
   }
 }
@@ -590,7 +615,7 @@ a{
   width: calc(33.33% - 20px); // Adjust width based on the number of images and margin
   @include mediaQuery(768px){
     width: calc(90%);
-    margin: 5px;
+    margin: 0px;
      }
 
   .workfirst {
@@ -637,9 +662,9 @@ a{
   position: absolute;
   left: 27%;
   top: 13%;
-  @include mediaQuery(576px){
-    left: 34%;
-     top: 0%;
+  @include mediaQuery(768px){
+    left: 20%;
+    
      overflow-y: hidden;
      overflow: hidden;
      
@@ -652,11 +677,7 @@ a{
     color: rgb(255, 196, 72);
     font-size: 50px;
     margin-bottom: 45px;
-    @include mediaQuery(576px){
-      font-size: 30px;
-      
-      
-    }
+
 
      &::before{
       content: '<h1>';
@@ -688,6 +709,11 @@ a{
     width: 64%;
     line-height: 1.4;
     margin-bottom: 40px;
+    @include mediaQuery(768px){
+      width: 80%;
+      
+      
+    }
     
 
     &::before{
@@ -714,6 +740,7 @@ a{
   }
 
   .contact-form{
+  
     
     &::before{
       content: '<form>';
@@ -743,10 +770,8 @@ a{
     ul{
       padding: 0;
       margin: 0;
-    /*   @include mediaQuery(576px){
-         display:none;
-      
-      } */
+    
+  
       li{
         padding: 0;
         margin: 0;
@@ -766,6 +791,11 @@ a{
         margin-left: 20px;
         float: left;
         clear: none;
+        @include mediaQuery(768px){
+          width: 42%;
+          
+          
+        }
 
         &:first-child{
           margin-left: 0;
@@ -796,11 +826,21 @@ a{
       padding: 20px;
       min-height: 150px;
       box-sizing: border-box;
+      @include mediaQuery(768px){
+        width: 87%;
+        
+        
+      }
     }
     .butform{
       display: flex;
       justify-content:flex-end ;
       padding-right: 138px;
+      @include mediaQuery(768px){
+        padding-right: 93px;
+        
+        
+      }
       .form-button{
         color: white;
         background-color: black;
@@ -823,7 +863,7 @@ a{
 .contact-email{
   width: 70%;
   padding: 125px 0px 0px 0px;
-  @include mediaQuery(576px){
+  @include mediaQuery(768px){
     display:none;
     
     
@@ -864,6 +904,11 @@ a{
   top: 150px;
   float: right;
   z-index: -2;
+  @include mediaQuery(768px){
+    display: none;
+ 
+    
+  }
   
   .contact-img{
     width: 350px;

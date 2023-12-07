@@ -41,7 +41,7 @@ const Skills = () => {
             idx={15}/>
         </h1>
         <p className="skill-para">In my tech journey, I have acquired a diverse technical skill set that spans multiple dimensions of software development.
-         I've worked with Laravel PHP and used this strong framework to make strong and dynamic web apps.Additionally, my expertise in Python extends to
+         I've worked with Laravel PHP.Additionally, my expertise in Python extends to
           backend development, contributing to versatile and scalable solutions. My understanding of data structures and algorithms forms a solid foundation
            for efficient problem-solving, ensuring that I approach coding challenges with a strategic mindset.</p>
              
