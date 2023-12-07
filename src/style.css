@@ -27,10 +27,9 @@ body {
   z-index: 3;
   min-height: 500px;
 }
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .nav-bar {
     display: none;
-    width: 130px;
   }
 }
 .nav-bar .logo {
@@ -123,7 +122,7 @@ body {
 }
 
 /* Media query for small screens */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .nav-bar1 {
     display: flex;
   }
@@ -515,6 +514,11 @@ body {
   border-radius: 10px;
   font-size: 18px;
   padding: 17px 40px 17px 40px;
+}
+@media (max-width: 600px) {
+  .about .but2 {
+    display: none;
+  }
 }
 .about .but2:hover {
   color: black;

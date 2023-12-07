@@ -34,9 +34,9 @@ body {
   left: 0;
   z-index: 3;
   min-height: 500px;
-  @include mediaQuery(576px){
+  @include mediaQuery(768px){
     display: none;
-    width: 130px;
+  
   }
 
 .logo{
@@ -136,9 +136,11 @@ a{
 }
 
 /* Media query for small screens */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .nav-bar1 {
-    display: flex;}
+    display: flex;
+    ;
+  }
     .navbar{
       display: none;
     }
@@ -427,6 +429,9 @@ a{
     border-radius: 10px;
     font-size: 18px;
     padding: 17px 40px 17px 40px;
+    @include mediaQuery(600px){
+      display: none;
+    }
 
     &:hover{
       
