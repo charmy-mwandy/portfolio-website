@@ -89,20 +89,12 @@ const Navbar = () => {
          </NavLink>
 
        <div className="logos">
-          <a
-            href="https://github.com/your-github-profile"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaGithub />
-          </a>
-          <a
-            href="https://linkedin.com/in/your-linkedin-profile"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaLinkedin />
-          </a>
+       <a href={githubProfileUrl} target="_blank" rel="noopener noreferrer">
+                            <FaGithub style={iconStyle} />
+                        </a>
+                        <a href={linkedinProfileUrl} target="_blank" rel="noopener noreferrer">
+                            <FaLinkedin style={iconStyle}  />
+                        </a>
         </div>
       </div>
     </nav> 
