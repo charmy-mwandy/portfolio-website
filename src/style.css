@@ -164,11 +164,6 @@ body {
   position: absolute;
   padding-bottom: -800px;
 }
-@media (max-width: 600px) {
-  .page {
-    z-index: 3;
-  }
-}
 .page .page-bg {
   display: flex;
   justify-content: flex-end;

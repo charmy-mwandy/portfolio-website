@@ -193,9 +193,9 @@ a{
   position: absolute;
   padding-bottom: -800px;
  
-  @include mediaQuery(600px){
-  z-index: 3;
-   }
+  // @include mediaQuery(600px){
+  // z-index: 3;
+  //  }
 
   .page-bg{
     display: flex;
