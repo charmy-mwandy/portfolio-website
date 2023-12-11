@@ -1,8 +1,8 @@
-import { useState,useRef } from 'react';
+import { useState } from 'react';
 import AnimatedLetters from '../Components/AnimatedLetters';
 
 const About = () => {
-    const [letterClass, setLetterClass] = useState('text-animate')
+    const [letterClass] = useState('text-animate')
  
     return(
         <div className="about">

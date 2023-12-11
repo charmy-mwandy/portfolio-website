@@ -1,5 +1,5 @@
 import {Outlet} from 'react-router-dom';
-import { useState,useRef } from 'react';
+import { useState, } from 'react';
 import AnimatedLetters from '../Components/AnimatedLetters';
 import MyCanvasContainer from '../Components/MyCanvasContainer';
 
@@ -8,7 +8,7 @@ const Skills = () => {
 
   
 
-    const [letterClass, setLetterClass] = useState('text-animate')
+    const [letterClass] = useState('text-animate')
 
 
  
@@ -37,7 +37,7 @@ const Skills = () => {
 
         <h1>
            <AnimatedLetters letterClass={letterClass}
-            strArray={['S','k','i','l','l','s',' ','&',' ', ' ',' ','E','x','p','e','r','i','e','n','c','e']} 
+            strArray={['S','k','i','l','l','s',' ','&',' ','E','x','p','e','r','i','e','n','c','e']} 
             idx={15}/>
         </h1>
         <p className="skill-para">In my tech journey, I have acquired a diverse technical skill set that spans multiple dimensions of software development.

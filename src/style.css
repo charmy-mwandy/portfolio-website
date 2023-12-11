@@ -69,7 +69,7 @@ body {
   display: block;
   margin-bottom: 25px;
 }
-@media (max-width: 576px) {
+@media (max-width: 600px) {
   .nav-bar ul a {
     font-size: 16px;
   }
@@ -84,7 +84,6 @@ body {
   display: none;
   align-items: center;
   padding: 15px;
-  background-color: black;
   color: white;
 }
 
@@ -103,22 +102,21 @@ body {
 
 .nav-links {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100%;
 }
 
 .nav-links a {
   text-decoration: none;
-  color: white;
+  color: rgb(110, 112, 113);
   margin: 0 15px;
   font-size: 16px;
 }
 
-.logos a {
-  color: white;
-  margin: 0 10px;
-  font-size: 24px;
+.logos {
+  display: flex;
+  gap: 30px;
 }
 
 /* Media query for small screens */
@@ -134,13 +132,15 @@ body {
   }
   .nav-links {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     position: absolute;
     top: 70px;
     left: 0;
     width: 100%;
-    background-color: black;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
     display: none;
+    z-index: 6;
   }
   .nav-links.show {
     display: flex;
@@ -166,7 +166,7 @@ body {
 }
 @media (max-width: 600px) {
   .page {
-    display: none;
+    z-index: 3;
   }
 }
 .page .page-bg {
@@ -176,14 +176,14 @@ body {
 .page .page-bg .bgfirst {
   width: 39%;
 }
-@media (max-width: 768px) {
-  .page .page-bg .bgfirst {
-    display: none;
-  }
-}
 .page .top-tags {
   bottom: auto;
   top: 48px;
+}
+@media (max-width: 600px) {
+  .page .top-tags {
+    display: none;
+  }
 }
 .page .tags {
   color: rgb(110, 112, 113);
@@ -192,13 +192,18 @@ body {
   bottom: 70px;
   left: 350px;
 }
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .page .tags {
-    left: 170px;
+    display: none;
   }
 }
 .page .bottom-tag-html {
   margin-left: -20px;
+}
+@media (max-width: 600px) {
+  .page .bottom-tag-html {
+    display: none;
+  }
 }
 
 .hero {
@@ -249,7 +254,7 @@ body {
   margin-top: -40px;
 }
 .hero .hero-txt h1::after {
-  content: "<h1>";
+  content: "</h1>";
   color: rgb(110, 112, 113);
   opacity: 0.6;
   position: absolute;
@@ -259,6 +264,12 @@ body {
   animation: fadeIn 1s 1.7s backwards;
   opacity: 0.6;
 }
+@media (max-width: 600px) {
+  .hero .hero-txt h1::after {
+    margin-left: 15px;
+    margin-top: 20px;
+  }
+}
 .hero .hero-txt h3 {
   color: rgb(255, 196, 72);
   font-size: 20px;
@@ -267,7 +278,7 @@ body {
 }
 @media (max-width: 600px) {
   .hero .hero-txt h3 {
-    margin-top: 90px;
+    margin-top: 60px;
   }
 }
 .hero .hero-txt h3::before {
@@ -296,6 +307,12 @@ body {
   border-radius: 10px;
   font-size: 18px;
   padding: 17px 40px 17px 40px;
+}
+@media (max-width: 600px) {
+  .hero .hero-txt .but1 {
+    font-size: 14px;
+    padding: 15px 40px 15px 40px;
+  }
 }
 .hero .hero-txt .but1:hover {
   color: black;
@@ -502,8 +519,8 @@ body {
 }
 @media (max-width: 768px) {
   .about p {
-    font-size: 16px;
-    width: 90%;
+    font-size: 14px;
+    width: 95%;
     padding-bottom: 25px;
   }
 }
@@ -533,14 +550,14 @@ body {
   z-index: 0;
   top: 185px;
 }
+@media (max-width: 600px) {
+  .about .page-bg-about {
+    top: 433px;
+  }
+}
 .about .page-bg-about .bgsecond {
   width: 45%;
   height: 45%;
-}
-@media (max-width: 768px) {
-  .about .page-bg-about .bgsecond {
-    display: none;
-  }
 }
 
 #skill {
@@ -589,6 +606,12 @@ body {
   animation: fadeIn 1s 1.7s backwards;
   opacity: 0.6;
 }
+@media (max-width: 600px) {
+  #skill .skill-txt h1::after {
+    margin-left: 13px;
+    margin-top: 14px;
+  }
+}
 #skill .skill-txt .skill-para {
   color: rgba(250, 248, 248, 0.829);
   font-size: 18px;
@@ -598,7 +621,7 @@ body {
 }
 @media (max-width: 768px) {
   #skill .skill-txt .skill-para {
-    font-size: 16px;
+    font-size: 14px;
     width: 95%;
   }
 }
@@ -610,41 +633,21 @@ body {
   font-size: 16px;
   margin-top: -40px;
 }
-#skill .skill-txt .skill-para::before::after {
-  content: "</p>";
-  color: rgb(110, 112, 113);
-  opacity: 0.6;
-  position: absolute;
-  font-size: 16px;
-  margin-top: 10px;
-  margin-left: 10px;
-  animation: fadeIn 1s 1.7s backwards;
-  opacity: 0.6;
-}
 #skill .skill-txt .skill-para1 {
   color: rgba(243, 240, 240, 0.833);
-  font-size: calc(0.2rem + 1vw);
   width: 59%;
   line-height: 1.4;
 }
 @media (max-width: 600px) {
   #skill .skill-txt .skill-para1 {
+    font-size: 14px;
     width: 95%;
   }
 }
 @media (max-width: 768px) {
   #skill .skill-txt .skill-para1 {
     width: 95%;
-    font-size: 16px;
   }
-}
-#skill .skill-txt .skill-para1::before {
-  content: "<p>";
-  color: rgb(110, 112, 113);
-  opacity: 0.6;
-  position: absolute;
-  font-size: 16px;
-  margin-top: -40px;
 }
 #skill .skill-txt .skill-para1::after {
   content: "</p>";
@@ -744,6 +747,7 @@ body {
 @media (max-width: 600px) {
   #work {
     left: 8%;
+    overflow-y: scroll;
   }
 }
 @media (max-width: 768px) and (min-width: 601px) {
@@ -755,8 +759,19 @@ body {
   color: rgb(255, 196, 72);
   font-size: 40px;
 }
+@media (max-width: 600px) {
+  #work .work-txt h1 {
+    font-size: 25px;
+  }
+}
 #work .work-txt p {
   color: white;
+}
+@media (max-width: 600px) {
+  #work .work-txt p {
+    font-size: 15px;
+    padding-bottom: 20px;
+  }
 }
 #work .work-gallery {
   display: flex;
@@ -767,6 +782,11 @@ body {
   #work .work-gallery {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 600px) {
+  #work .work-gallery {
+    grid-template-columns: 1fr;
   }
 }
 #work .work-image-container {
@@ -817,20 +837,25 @@ body {
 }
 @media (max-width: 600px) {
   .contact-page {
+    display: flex;
+    flex-direction: column;
     left: 8%;
   }
 }
 @media (max-width: 768px) and (min-width: 601px) {
   .contact-page {
     left: 20%;
-    overflow-y: hidden;
-    overflow: hidden;
   }
 }
 .contact-page .contact-txt h1 {
   color: rgb(255, 196, 72);
   font-size: 50px;
   margin-bottom: 45px;
+}
+@media (max-width: 600px) {
+  .contact-page .contact-txt h1 {
+    font-size: 32px;
+  }
 }
 .contact-page .contact-txt h1::before {
   content: "<h1>";
@@ -839,6 +864,11 @@ body {
   position: absolute;
   font-size: 16px;
   margin-top: -30px;
+}
+@media (max-width: 600px) {
+  .contact-page .contact-txt h1::before {
+    font-size: 14px;
+  }
 }
 .contact-page .contact-txt h1::after {
   content: "</h1>";
@@ -851,6 +881,13 @@ body {
   animation: fadeIn 1s 1.7s backwards;
   opacity: 0.6;
 }
+@media (max-width: 600px) {
+  .contact-page .contact-txt h1::after {
+    margin-top: 12px;
+    margin-left: 12px;
+    font-size: 14px;
+  }
+}
 .contact-page .contact-txt .contact-ptxt1 {
   color: rgba(243, 240, 240, 0.833);
   font-size: 18px;
@@ -858,9 +895,11 @@ body {
   line-height: 1.4;
   margin-bottom: 40px;
 }
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .contact-page .contact-txt .contact-ptxt1 {
-    width: 80%;
+    font-size: 14px;
+    width: 94%;
+    margin-bottom: 20px;
   }
 }
 .contact-page .contact-txt .contact-ptxt1::before {
@@ -870,6 +909,11 @@ body {
   position: absolute;
   font-size: 16px;
   margin-top: -35px;
+}
+@media (max-width: 600px) {
+  .contact-page .contact-txt .contact-ptxt1::before {
+    font-size: 14px;
+  }
 }
 .contact-page .contact-txt .contact-ptxt1::after {
   content: "</p>";
@@ -881,6 +925,11 @@ body {
   margin-left: 25px;
   animation: fadeIn 1s 1.7s backwards;
   opacity: 0.6;
+}
+@media (max-width: 600px) {
+  .contact-page .contact-txt .contact-ptxt1::after {
+    font-size: 14px;
+  }
 }
 .contact-page .contact-txt .contact-form {
   width: 100%;
@@ -894,6 +943,11 @@ body {
   font-size: 16px;
   margin-top: -30px;
 }
+@media (max-width: 600px) {
+  .contact-page .contact-txt .contact-form::before {
+    display: none;
+  }
+}
 .contact-page .contact-txt .contact-form::after {
   content: "</form>";
   color: rgb(110, 112, 113);
@@ -904,6 +958,11 @@ body {
   margin-left: 0;
   animation: fadeIn 1s 1.7s backwards;
   opacity: 0.6;
+}
+@media (max-width: 600px) {
+  .contact-page .contact-txt .contact-form::after {
+    display: none;
+  }
 }
 .contact-page .contact-txt .contact-form ul {
   padding: 0;
@@ -928,9 +987,9 @@ body {
   float: left;
   clear: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .contact-page .contact-txt .contact-form ul li.contact-half {
-    width: 42%;
+    width: 44%;
   }
 }
 .contact-page .contact-txt .contact-form ul li.contact-half:first-child {
@@ -960,9 +1019,10 @@ body {
   min-height: 150px;
   box-sizing: border-box;
 }
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .contact-page .contact-txt .contact-form textarea {
-    width: 87%;
+    width: 93%;
+    min-height: 70px;
   }
 }
 .contact-page .contact-txt .contact-form .butform {
@@ -972,7 +1032,7 @@ body {
 }
 @media (max-width: 768px) {
   .contact-page .contact-txt .contact-form .butform {
-    padding-right: 93px;
+    justify-content: flex-start;
   }
 }
 .contact-page .contact-txt .contact-form .butform .form-button {
@@ -982,6 +1042,12 @@ body {
   padding: 17px 40px 17px 40px;
   border: 1px solid rgb(255, 196, 72);
   border-radius: 10px;
+}
+@media (max-width: 600px) {
+  .contact-page .contact-txt .contact-form .butform .form-button {
+    font-size: 14px;
+    padding: 15px 40px 15px 40px;
+  }
 }
 .contact-page .contact-txt .contact-form .butform .form-button:hover {
   color: black;
@@ -993,12 +1059,19 @@ body {
 }
 @media (max-width: 768px) {
   .contact-page .contact-email {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px 0px 0px;
   }
 }
 .contact-page .contact-email .txt-1, .contact-page .contact-email .txt-2 {
   color: white;
   font-size: 22px;
+}
+@media (max-width: 600px) {
+  .contact-page .contact-email .txt-1, .contact-page .contact-email .txt-2 {
+    font-size: 16px;
+  }
 }
 .contact-page .contact-email .contact1, .contact-page .contact-email .contact2 {
   display: flex;
@@ -1009,9 +1082,20 @@ body {
   width: 30px;
   height: 30px;
 }
+@media (max-width: 600px) {
+  .contact-page .contact-email .contact1 img, .contact-page .contact-email .contact2 img {
+    width: 20px;
+    height: 20px;
+  }
+}
 .contact-page .contact-email .contact1 .link, .contact-page .contact-email .contact2 .link {
   color: rgb(255, 196, 72);
   text-decoration: none;
+}
+@media (max-width: 600px) {
+  .contact-page .contact-email .contact1 .link, .contact-page .contact-email .contact2 .link {
+    font-size: 13px;
+  }
 }
 .contact-page .contact-email .contact1 .link:hover, .contact-page .contact-email .contact2 .link:hover {
   color: rgba(255, 197, 72, 0.433);

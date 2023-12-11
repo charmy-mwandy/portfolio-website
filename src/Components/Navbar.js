@@ -72,19 +72,19 @@ const Navbar = () => {
        </div>
 
        <div className={`nav-links ${isNavOpen ? 'show' : ''}`}>
-        <NavLink to="/" onClick={closeNav} exact>
+        <NavLink style={navLinkStyles}  to="/" onClick={closeNav} exact>
            Home
         </NavLink>
-        <NavLink to="/About" onClick={closeNav}>
+        <NavLink style={navLinkStyles}  to="/About" onClick={closeNav}>
           About
         </NavLink>
-        <NavLink to="/Skills" onClick={closeNav}>
+        <NavLink style={navLinkStyles}  to="/Skills" onClick={closeNav}>
           Skills
          </NavLink>
-         <NavLink to="/Work" onClick={closeNav}>
+         <NavLink style={navLinkStyles}  to="/Work" onClick={closeNav}>
          Work
         </NavLink>
-        <NavLink to="/Contact" onClick={closeNav}>
+        <NavLink style={navLinkStyles}  to="/Contact" onClick={closeNav}>
            Contact
          </NavLink>
 

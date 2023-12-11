@@ -5,7 +5,7 @@ import CV from "../Components/dox/Charmaine-CV.pdf";
 
 
 const Home = () => {
-    const [letterClass, setLetterClass] = useState('text-animate')
+    const [letterClass] = useState('text-animate')
     const nameArray = ['  ','C','h','a','r','m','a','i','n','e']
     const jobArray = ['W','e','b','    ','D','e','v','e','l','o','p','e','r']
 

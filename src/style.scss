@@ -76,7 +76,7 @@ a{
   font-size: 20px;
   display: block;
   margin-bottom: 25px;
-  @include mediaQuery(576px){
+  @include mediaQuery(600px){
     font-size: 16px;
   }
   
@@ -98,7 +98,7 @@ a{
   display: none;
   align-items: center;
   padding: 15px;
-  background-color: black;
+ // background-color: rgb(239, 16, 16);
   color: white;
 }
 
@@ -117,23 +117,24 @@ a{
 
 .nav-links {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100%;
 }
 
 .nav-links a {
   text-decoration: none;
-  color: white;
+  color:rgb(110, 112, 113);
   margin: 0 15px;
   font-size: 16px;
 }
 
-.logos a {
-  color: white;
-  margin: 0 10px;
-  font-size: 24px;
+.logos{
+  display: flex;
+  gap: 30px;
+
 }
+
 
 /* Media query for small screens */
 @media (max-width: 768px) {
@@ -150,13 +151,15 @@ a{
 
   .nav-links {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     position: absolute;
     top: 70px;
     left: 0;
     width: 100%;
-    background-color: black;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
     display: none;
+    z-index: 6;
   }
 
   .nav-links.show {
@@ -191,7 +194,7 @@ a{
   padding-bottom: -800px;
  
   @include mediaQuery(600px){
-   display: none;
+  z-index: 3;
    }
 
   .page-bg{
@@ -201,15 +204,21 @@ a{
 
     .bgfirst{
       width: 39%;
-      @include mediaQuery(768px){
-        display: none;
-      }
+      // @include mediaQuery(600px){
+      //   display: flex;
+      // }
+      // @include mediaQuery(768px){
+      //   display: none;
+      // }
     }
   }
 
   .top-tags{
     bottom: auto;
     top: 48px;
+    @include mediaQuery(600px){
+   display: none;
+   }
   }
 
   .tags{
@@ -218,13 +227,16 @@ a{
     position:absolute;
     bottom: 70px;
     left: 350px;
-    @include mediaQuery(768px){
-      left: 170px;
-    }
+    @include mediaQuery(600px){
+      display: none;
+      }
   }
 
   .bottom-tag-html{
     margin-left:-20px ;
+    @include mediaQuery(600px){
+      display: none;
+      }
 
   }
 }
@@ -280,7 +292,7 @@ a{
           
       }
       &::after{
-        content: '<h1>';
+        content: '</h1>';
         color:rgb(110, 112, 113);
         opacity: 0.6;
         position:absolute;
@@ -289,6 +301,11 @@ a{
         margin-left: 30px;
         animation: fadeIn 1s 1.7s backwards;
         opacity: 0.6;
+        @include mediaQuery(600px){
+          margin-left: 15px;
+          margin-top: 20px;
+        
+         }
           
       }
     }
@@ -299,7 +316,7 @@ a{
       margin-bottom: 60px;
       letter-spacing: 1.9;
       @include mediaQuery(600px){
-        margin-top: 90px;
+        margin-top: 60px;
       
        }
 
@@ -333,6 +350,11 @@ a{
       border-radius: 10px;
       font-size: 18px;
       padding: 17px 40px 17px 40px;
+      @include mediaQuery(600px){
+        font-size: 14px;
+        padding: 15px 40px 15px 40px;
+      
+       }
 
       &:hover{
         
@@ -409,8 +431,8 @@ a{
     line-height: 1.4;
     font-size: 18px;
     @include mediaQuery(768px){
-      font-size: 16px;
-      width: 90%;
+      font-size: 14px;
+      width: 95%;
       padding-bottom: 25px;
     }
   }
@@ -442,13 +464,16 @@ a{
     position: absolute;
     z-index: 0;
     top: 185px;
+        @include mediaQuery(600px){
+          top: 433px;
+      }
    
     .bgsecond{
       width: 45%;
       height: 45%;
-      @include mediaQuery(768px){
-        display: none;
-      }
+      // @include mediaQuery(768px){
+      //   display: none;
+      // }
     }
   }
 
@@ -501,6 +526,10 @@ a{
       margin-left: 30px;
       animation: fadeIn 1s 1.7s backwards;
       opacity: 0.6;
+      @include mediaQuery(600px){
+        margin-left: 13px;
+        margin-top: 14px;
+       }
         
     }  
 
@@ -513,7 +542,7 @@ a{
     line-height: 1.4;
     margin-bottom: 55px;
     @include mediaQuery(768px){
-      font-size: 16px;
+      font-size: 14px;
       width: 95%;
       
     }
@@ -527,29 +556,17 @@ a{
        margin-top: -40px;
         
      
-     &::after{
-     content: '</p>';
-     color:rgb(110, 112, 113);
-       opacity: 0.6;
-       position:absolute;
-       font-size: 16px;
-       margin-top: 10px;
-       margin-left: 10px;
-       animation: fadeIn 1s 1.7s backwards;
-       opacity: 0.6; 
-        
-     } 
   }
 }
 
   .skill-para1{
     color: rgba(243, 240, 240, 0.833);
    // font-size: 18px;
-    font-size:calc(0.2rem + 1vw);
+   // font-size:calc(0.2rem + 1vw);
     width: 59%;
     line-height: 1.4;
     @include mediaQuery(600px){
-      //font-size: 16px;
+      font-size: 14px;
       width: 95%;
       
       
@@ -557,20 +574,10 @@ a{
     @include mediaQuery(768px){
       //font-size: 16px;
       width: 95%;
-      font-size: 16px;
+      //font-size: 16px;
       
     }
     
-
-    &::before{
-      content: '<p>';
-      color:rgb(110, 112, 113);
-      opacity: 0.6;
-      position:absolute;
-      font-size: 16px;
-      margin-top: -40px;
-        
-    } 
     &::after{
       content: '</p>';
       color:rgb(110, 112, 113);
@@ -689,6 +696,7 @@ a{
   top: 10%;
   @include mediaQuery(600px){
     left: 8%;
+    overflow-y: scroll;
    }
    @include mediaQuery(768px, 601px){
 
@@ -700,10 +708,19 @@ a{
   h1{
     color: rgb(255, 196, 72);
     font-size: 40px;
+    @include mediaQuery(600px){
+      font-size: 25px;
+     }
   }
+
 
   p{
     color: white;
+    @include mediaQuery(600px){
+     font-size: 15px;
+     padding-bottom: 20px;
+     }
+    
   }
 
       
@@ -716,10 +733,13 @@ a{
   justify-content: space-between; // Ensure equal spacing between the image containers
   @include mediaQuery(768px){
  display: grid;
-  grid-template-columns:(1fr 1fr);
-  
-    
+  grid-template-columns:(1fr  1fr);
+
   }
+  @include mediaQuery(600px){
+    grid-template-columns:(1fr  );
+    
+   }
 }
 
 
@@ -731,6 +751,7 @@ a{
   @include mediaQuery(768px){
     width: calc(90%);
     margin: 0px;
+ 
      }
 
   .workfirst {
@@ -778,23 +799,29 @@ a{
   left: 27%;
   top: 13%;
   @include mediaQuery(600px){
+    display: flex;
+    flex-direction: column;
     left: 8%;
-   }
+    }
+ 
+  // @include mediaQuery(600px){
+  //   left: 8%;
+  //  }
    @include mediaQuery(768px, 601px){
     left: 20%;
-    
-     overflow-y: hidden;
-     overflow: hidden;
+
      
     
   }
 .contact-txt{
-  //background-color: aqua;
 
   h1{
     color: rgb(255, 196, 72);
     font-size: 50px;
     margin-bottom: 45px;
+    @include mediaQuery(600px){
+      font-size: 32px;
+     }
 
 
      &::before{
@@ -804,6 +831,9 @@ a{
       position:absolute;
       font-size: 16px;
       margin-top: -30px;
+      @include mediaQuery(600px){
+        font-size: 14px;
+       }
         
     }
     &::after{
@@ -816,6 +846,11 @@ a{
       margin-left: 30px;
       animation: fadeIn 1s 1.7s backwards;
       opacity: 0.6;
+      @include mediaQuery(600px){
+        margin-top: 12px;
+        margin-left: 12px;
+        font-size: 14px;
+       }
         
     } 
 
@@ -827,12 +862,11 @@ a{
     width: 64%;
     line-height: 1.4;
     margin-bottom: 40px;
-    @include mediaQuery(768px){
-      width: 80%;
-      
-      
-    }
-    
+    @include mediaQuery(600px){
+      font-size: 14px;
+      width: 94%;
+      margin-bottom: 20px;
+     }
 
     &::before{
       content: '<p>';
@@ -841,6 +875,10 @@ a{
       position:absolute;
       font-size: 16px;
       margin-top: -35px;
+      @include mediaQuery(600px){
+        font-size: 14px;
+       
+       }
         
     } 
     &::after{
@@ -853,7 +891,10 @@ a{
       margin-left: 25px;
       animation: fadeIn 1s 1.7s backwards;
       opacity: 0.6;
-        
+      @include mediaQuery(600px){
+        font-size: 14px;
+       
+       }
     }
   }
 
@@ -867,6 +908,10 @@ a{
       position:absolute;
       font-size: 16px;
       margin-top: -30px;
+      @include mediaQuery(600px){
+        display: none;
+       
+       }
         
     } 
     &::after{
@@ -879,6 +924,10 @@ a{
       margin-left: 0;
       animation: fadeIn 1s 1.7s backwards;
       opacity: 0.6;
+      @include mediaQuery(600px){
+       display: none;
+       
+       }
         
     }
 
@@ -909,11 +958,16 @@ a{
         margin-left: 20px;
         float: left;
         clear: none;
-        @include mediaQuery(768px){
-          width: 42%;
+        @include mediaQuery(600px){
+          width: 44%;
           
           
         }
+        // @include mediaQuery(768px){
+        //   width: 42%;
+          
+          
+        // }
 
         &:first-child{
           margin-left: 0;
@@ -944,18 +998,24 @@ a{
       padding: 20px;
       min-height: 150px;
       box-sizing: border-box;
-      @include mediaQuery(768px){
-        width: 87%;
+      @include mediaQuery(600px){
+        width: 93%;
+        min-height: 70px;
         
         
       }
+      // @include mediaQuery(768px){
+      //   width: 87%;
+        
+        
+      // }
     }
     .butform{
       display: flex;
       justify-content:flex-end ;
       padding-right: 138px;
       @include mediaQuery(768px){
-        padding-right: 93px;
+        justify-content:flex-start ;
         
         
       }
@@ -966,6 +1026,11 @@ a{
         padding: 17px 40px 17px 40px;
         border: 1px solid rgb(255, 196, 72);
         border-radius: 10px;
+        @include mediaQuery(600px){
+          font-size: 14px;
+          padding: 15px 40px 15px 40px;
+         }
+    
   
         &:hover{
           color: black;
@@ -982,7 +1047,10 @@ a{
   width: 70%;
   padding: 125px 0px 0px 0px;
   @include mediaQuery(768px){
-    display:none;
+   // display:none;
+   display: flex;
+   flex-direction: column;
+   padding: 0px 0px 0px 0px;
     
     
   }
@@ -990,6 +1058,9 @@ a{
   .txt-1, .txt-2{
     color: white;
     font-size: 22px;
+    @include mediaQuery(600px){
+      font-size: 16px;
+   }
   }
 
   .contact1, .contact2{
@@ -999,11 +1070,18 @@ a{
     img{
       width: 30px;
       height: 30px;
+      @include mediaQuery(600px){
+        width: 20px;
+      height: 20px;
+     }
     }
 
     .link{
       color:rgb(255, 196, 72);
       text-decoration: none;
+      @include mediaQuery(600px){
+        font-size: 13px;
+     }
 
       &:hover{
         color:rgba(255, 197, 72, 0.433);

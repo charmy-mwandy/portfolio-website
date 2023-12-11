@@ -71,7 +71,7 @@ const Contact = () => {
                           hesitate to use the form below.</p>
 
                           <div className="contact-form">
-                            <form  r/* ef={refForm} onSubmit={sendEmail} */ >
+                            <form  action='https://data.endpoint.space/clpwospk7001808k16iypj630' method='POST'>
                                 <ul>
                                     <li className='contact-half'>
                                         <input type="text" name="name" placeholder="Name" required />
@@ -94,14 +94,14 @@ const Contact = () => {
                 <div className="contact-email">
                     <h3 className='txt-1'>Email me :</h3>
                     <div className="contact1">
-                        <img className='' src= 'images/icon email 1.png'  alt="emailicon"/>
-                        <a  className='link' href="#">charmainemwandiringa@gmail.com</a>
+                        <img  src= 'images/icon email 1.png'  alt="emailicon"/>
+                        <a  className='link' href="mailto:charmainemwandiringa@gmail.com">charmainemwandiringa@gmail.com</a>
                     </div>
 
                     <h3 className='txt-2'>Contact me :</h3>
                     <div className="contact2">
-                        <img className='' src= 'images/icon call 1.png'  alt="callicon"/>
-                        <a className='link' href="#">+263 777228641</a>
+                        <img  src= 'images/icon call 1.png'  alt="callicon"/>
+                        <a className='link' href="https://wa.me/+263777228641/" target='_blank'>+263 777228641</a>
                     </div>
                 </div>
 

@@ -1,9 +1,9 @@
-import { useState,useRef } from 'react';
+import { useState, } from 'react';
 import AnimatedLetters from '../Components/AnimatedLetters';
 import WorkImage from '../Components/WorkImage';
 
 const Work = () => {
-    const [letterClass, setLetterClass] = useState('text-animate')
+    const [letterClass] = useState('text-animate')
  
     return(
         <>
