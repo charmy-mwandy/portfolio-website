@@ -29,7 +29,7 @@ const Navbar = () => {
       
       };
 
-    const githubProfileUrl = 'https://github.com/charmy-mwandy?tab=repositories'; 
+    const githubProfileUrl = 'https://https://github.com/charmy-mwandy?tab=repositories'; 
     const linkedinProfileUrl = 'https://linkedin.com/in/charmaine-mwandiringa-719885264/'; 
       
  
