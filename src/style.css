@@ -744,6 +744,9 @@ body {
     left: 8%;
     overflow-y: scroll;
   }
+  #work body {
+    overflow-y: auto;
+  }
 }
 @media (max-width: 768px) and (min-width: 601px) {
   #work {

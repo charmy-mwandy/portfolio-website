@@ -17,7 +17,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-   overflow-y: hidden;
+  overflow-y: hidden;
   // font-family: 'basier';
 }
 
@@ -695,6 +695,9 @@ a{
   left: 21%;
   top: 10%;
   @include mediaQuery(600px){
+    body{
+      overflow-y: auto;
+    }
     left: 8%;
     overflow-y: scroll;
    }
