@@ -60,7 +60,7 @@ This diverse skill set enables me to approach coding challenges with a strategic
                <p className='skill-para2'>
                Driven by my passion to make a significant impact in the sector and contribute to positive change through my skills, I eagerly look forward to collaborating on innovative projects that push the boundaries of technological advancement. Excited for the opportunities that lie ahead, I am ready to embark on this journey of growth and discovery.
 
-Moreover, my hands-on experience in designing websites, including crafting my portfolio and projects at Dynamic WoW Solutions, has ignited a strong interest in furthering my understanding of design principles. I am enthusiastic about expanding my knowledge in this area.
+Moreover, my hands-on experience in designing websites using Figma, including crafting my portfolio and projects at Dynamic WoW Solutions, has ignited a strong interest in furthering my understanding of design principles. I am enthusiastic about expanding my knowledge in this area.
                </p>
     </div>
         
