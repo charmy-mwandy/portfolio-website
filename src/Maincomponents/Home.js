@@ -5,19 +5,21 @@ import CV from "../Components/dox/Charmaine-CV.pdf";
 
 
 const Home = () => {
-    const [letterClass] = useState('text-animate')
+    const [letterClass, setLetterClass] = useState('text-animate')
     const nameArray = ['  ','C','h','a','r','m','a','i','n','e']
     const jobArray = ['W','e','b','    ','D','e','v','e','l','o','p','e','r']
 
- /*    useEffect(() => {
-       return setTimeout(() => {
-            setLetterClass('text-animate-hover')
-        }, 4000)
-    }, [])  
- */
+    useEffect(() => {
+        const timeoutId = setTimeout(() => {
+            setLetterClass('text-animate-hover');
+        }, 4000);
+
+        return () => clearTimeout(timeoutId);
+    }, [letterClass]);
+ 
     const [loopNum,setLoopNum] = useState(0);
     const [isDeleting,setIsDeleting] = useState(false);
-    const toRotate = ["Front-end Developer","Web Developer","Web Designer" ];
+    const toRotate = ["Web Designer","Graphic Designer","Web Developer","Front-end Developer"];
     const [text,setText] = useState('');
     const [delta,setDelta] = useState(300 - Math.random() * 100);
     const period = 2000;
@@ -96,7 +98,7 @@ const Home = () => {
                  
                 </h1>
                 <h3>&lt; {/* Front-end Developer */} {text} &gt;</h3>
-                 <a href={CV} download="Charmaine-CV.pdf"><button className="but1">Download Cv</button></a> 
+                 <a href={CV} download="Charmaine-CV.pdf"><button className="but1">Download CV</button></a> 
             
             </div> 
 

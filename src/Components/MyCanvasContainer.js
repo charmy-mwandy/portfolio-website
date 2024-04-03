@@ -28,9 +28,9 @@ function MyCanvasContainer() {
           <div className="face5">
             <FontAwesomeIcon icon={faGitAlt} color='rgb(255, 196, 72)'/>
           </div>
-          {/* <div className="face6">
-            <FontAwesomeIcon icon={faES6} color='rgb(255, 196, 72)'/>
-          </div> */}
+          <div className="face6">
+            <FontAwesomeIcon icon={faGitAlt} color='rgb(255, 196, 72)'/>
+          </div>
 
         </div>
     </div>

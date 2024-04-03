@@ -559,7 +559,7 @@ body {
   display: flex;
   position: absolute;
   left: 26%;
-  top: 13%;
+  top: 9%;
 }
 @media (max-width: 600px) {
   #skill {
@@ -612,7 +612,6 @@ body {
   font-size: 18px;
   width: 59%;
   line-height: 1.4;
-  margin-bottom: 55px;
 }
 @media (max-width: 768px) {
   #skill .skill-txt .skill-para {
@@ -644,7 +643,23 @@ body {
     width: 95%;
   }
 }
-#skill .skill-txt .skill-para1::after {
+#skill .skill-txt .skill-para2 {
+  color: rgba(243, 240, 240, 0.833);
+  width: 59%;
+  line-height: 1.4;
+}
+@media (max-width: 600px) {
+  #skill .skill-txt .skill-para2 {
+    font-size: 14px;
+    width: 95%;
+  }
+}
+@media (max-width: 768px) {
+  #skill .skill-txt .skill-para2 {
+    width: 95%;
+  }
+}
+#skill .skill-txt .skill-para2::after {
   content: "</p>";
   color: rgb(110, 112, 113);
   opacity: 0.6;
@@ -683,15 +698,16 @@ body {
   animation-iteration-count: infinite;
   animation-duration: 12s;
   transform-style: preserve-3d;
-  transform: 100px 100px 0px;
+  transform: 100px 100px 0;
   margin-left: calc(50% - 100px);
+  transform: rotateX(45deg) rotateY(45deg);
 }
 #skill #myCanvasContainer .cubespinner div {
   position: absolute;
   width: 300px;
   height: 300px;
   border: 1px solid rgb(255, 196, 72);
-  background-color: rgb(244, 244, 241);
+  background-color: rgba(244, 244, 241, 0.793);
   font-size: 100px;
   display: flex;
   justify-content: center;
@@ -699,22 +715,22 @@ body {
   box-shadow: 0 0 2px 0px yellow;
 }
 #skill #myCanvasContainer .cubespinner .face1 {
-  transform: rotateZ(100deg);
+  transform: translateZ(100px);
 }
 #skill #myCanvasContainer .cubespinner .face2 {
-  transform: rotateY(90deg) rotateZ(100deg);
+  transform: rotateY(90deg) translateZ(100px);
 }
 #skill #myCanvasContainer .cubespinner .face3 {
-  transform: rotateY(90deg) rotateX(90deg) rotateZ(100deg);
+  transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
 }
 #skill #myCanvasContainer .cubespinner .face4 {
-  transform: rotateY(180deg) rotateZ(100deg) rotateZ(100deg);
+  transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
 }
 #skill #myCanvasContainer .cubespinner .face5 {
-  transform: rotateY(-90deg) rotateZ(90deg) rotateZ(100deg);
+  transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
 }
 #skill #myCanvasContainer .cubespinner .face6 {
-  transform: rotateY(-90deg) rotateZ(100deg);
+  transform: rotateX(-90deg) translateZ(100px);
 }
 @keyframes spincube {
   from, to {
@@ -724,13 +740,16 @@ body {
     transform: rotateY(-90deg);
   }
   33% {
-    transform: rotateY(-180deg) rotateZ(90deg);
+    transform: rotateY(-90deg) rotateZ(90deg);
   }
   50% {
+    transform: rotateY(-180deg) rotateZ(90deg);
+  }
+  66% {
     transform: rotateY(-270deg) rotateZ(90deg);
   }
   83% {
-    transform: rotateX(90deg);
+    transform: rotateX(90deg) rotateZ(90deg);
   }
 }
 

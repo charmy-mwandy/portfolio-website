@@ -8,13 +8,13 @@ const Skills = () => {
 
   
 
-    const [letterClass] = useState('text-animate')
+     const [letterClass] = useState('text-animate')
 
 
  
     return(
         <>
-        <div className="page">
+        {/* <div className="page">
           
    <span className='tags top-tags'>
        &lt;html&gt;
@@ -30,9 +30,19 @@ const Skills = () => {
        <span className='bottom-tag-html'>&lt;/html&gt;</span>
    </span>
        
-  </div>
+  </div> */}
 
-  <div id="skill">
+  {/* <div class="container">
+  <div class="carousel">
+    <div class="carousel__face"><span className='skill_text'>This is something</span></div>
+    <div class="carousel__face"><span className='skill_text'>Very special</span></div>
+    <div class="carousel__face"><span className='skill_text'>Special is the key</span></div>
+    <div class="carousel__face"><span className='skill_text'>For you</span></div>
+    <div class="carousel__face"><span className='skill_text'>Just give it</span></div>
+  </div>
+</div> */}
+
+   <div id="skill">
     <div className="skill-txt">
 
         <h1>
@@ -40,17 +50,18 @@ const Skills = () => {
             strArray={['S','k','i','l','l','s',' ','&',' ','E','x','p','e','r','i','e','n','c','e']} 
             idx={15}/>
         </h1>
-        <p className="skill-para">In my tech journey, I have acquired a diverse technical skill set that spans multiple dimensions of software development.
-         I've worked with Laravel PHP.Additionally, my expertise in Python extends to
-          backend development, contributing to versatile and scalable solutions. My understanding of data structures and algorithms forms a solid foundation
-           for efficient problem-solving, ensuring that I approach coding challenges with a strategic mindset.</p>
+        <p className="skill-para">A driven Front-end Web Developer, I've successfully completed projects during my bootcamp utilizing React, HTML, CSS, SASS, and JavaScript to create responsive websites.My journey in software development has provided me with a diverse skill set, including exposure to technologies like Laravel PHP, Django, and foundational knowledge in data structures and algorithms. I am driven to further enhance my understanding of software technologies.
+
+This diverse skill set enables me to approach coding challenges with a strategic mindset, facilitating efficient problem-solving and debugging in the dynamic software industry.      </p>
              
              
-        <p className='skill-para1'> While I've grasped the basics of Java, my
-            focus on frontend development has seen me successfully complete projects using React and Python. This amalgamation of technologies reflects
-             my commitment to staying versatile and adaptable in the ever-evolving landscape of software engineering. Through hands-on experience and a
-              commitment to continuous learning, alongside my technical skills, I bring interpersonal skills and qualities that enhance teamwork and collaboration,
-               time management proficiency, and effective problem-solving ,  emphasizing a well-rounded approach to web development challenges.</p>
+        <p className='skill-para1'> My commitment to versatility and adaptability is reflected in my amalgamation of technologies, which underscores my dedication to staying current in the ever-evolving landscape of software development. Through hands-on experience and continuous learning, I not only possess technical skills but also bring interpersonal qualities that enhance teamwork and collaboration, as well as effective problem-solving abilities.</p>
+
+               <p className='skill-para2'>
+               Driven by my passion to make a significant impact in the sector and contribute to positive change through my skills, I eagerly look forward to collaborating on innovative projects that push the boundaries of technological advancement. Excited for the opportunities that lie ahead, I am ready to embark on this journey of growth and discovery.
+
+Moreover, my hands-on experience in designing websites, including crafting my portfolio and projects at Dynamic WoW Solutions, has ignited a strong interest in furthering my understanding of design principles. I am enthusiastic about expanding my knowledge in this area.
+               </p>
     </div>
         
         <MyCanvasContainer />
@@ -60,7 +71,7 @@ const Skills = () => {
  
 
 
-  </div>
+  </div> 
 
 
 
