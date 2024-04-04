@@ -71,7 +71,7 @@ const Contact = () => {
                           hesitate to use the form below.</p>
 
                           <div className="contact-form">
-                            <form  action='https://data.endpoint.space/clpwospk7001808k16iypj630' method='POST'>
+                            <form   action="https://formspree.io/f/xeqwvrpb" method='POST'>
                                 <ul>
                                     <li className='contact-half'>
                                         <input type="text" name="name" placeholder="Name" required />
