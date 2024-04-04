@@ -1,7 +1,6 @@
 @use './variables/' as *;
 @import 'animate.css';
 
-
 @font-face {
   font-family: 'basier' ;
   src: url(../src/fonts/basiersquaremono-regular-webfont.woff);
@@ -18,96 +17,10 @@ body {
   padding: 0;
   height: 100vh;
   overflow-y: hidden;
-  // font-family: 'basier';
+  //  font-family:  'determination';
 }
 
-
-// body {
-//   margin: 0;
-//   background: lightgray;
-//   text-align: center;
-//   font-family: sans-serif;
-//   color: #fefefe;
-// }
-// .container {
-//   position: relative;
-//   width: 100px;
-//   margin: 100px auto 0 auto;
-//   perspective: 1000px;
-// }
-
-// .carousel {
-//   position: absolute;
-//   width: 100%;
-//   height: 100%;
-//   transform-style: preserve-3d; 
-//   animation: rotate360 60s infinite forwards linear;
-// }
-// .carousel__face { 
-//   position: absolute;
-//   width: 100px;
-//   height: 87px;
-//   // top: 20px;
-//   // left: 10px;
-//   // right: 10px;
-//   background-size: cover;
-//   box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.5);
-//   display: flex;
-// }
-
-// .skill_text {
-//   margin: auto;
-//   font-size: 2rem;
-//   color: white;
-// }
-
-
-// .carousel__face:nth-child(1) {
-//   background-image: url("https://images.pexels.com/photos/1141853/pexels-photo-1141853.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-//   transform: rotateY(  0deg) translateZ(430px); }
-// .carousel__face:nth-child(2) { 
-//   background-image: url("https://images.pexels.com/photos/1258865/pexels-photo-1258865.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-//     transform: rotateY( 40deg) translateZ(430px); }
-// .carousel__face:nth-child(3) {
-//   background-image: url("https://images.pexels.com/photos/808466/pexels-photo-808466.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-//   transform: rotateY( 80deg) translateZ(430px); }
-// .carousel__face:nth-child(4) {
-//   background-image: url("https://images.pexels.com/photos/1394841/pexels-photo-1394841.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-//   transform: rotateY(120deg) translateZ(430px); }
-// .carousel__face:nth-child(5) { 
-//   background-image: url("https://images.pexels.com/photos/969679/pexels-photo-969679.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-//  transform: rotateY(160deg) translateZ(430px); }
-// .carousel__face:nth-child(6) { 
-//   background-image: url("https://images.pexels.com/photos/1834400/pexels-photo-1834400.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-//  transform: rotateY(200deg) translateZ(430px); }
-// .carousel__face:nth-child(7) { 
-//   background-image: url("https://images.pexels.com/photos/1415268/pexels-photo-1415268.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-//  transform: rotateY(240deg) translateZ(430px); }
-// .carousel__face:nth-child(8) {
-//   background-image: url("https://images.pexels.com/photos/135018/pexels-photo-135018.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-//   transform: rotateY(280deg) translateZ(430px); }
-// .carousel__face:nth-child(9) {
-//   background-image: url("https://images.pexels.com/photos/1175135/pexels-photo-1175135.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-//   transform: rotateY(320deg) translateZ(430px); }
-
-
-// @keyframes rotate360 {
-//   from {
-//     transform: rotateY(0deg);
-//   }
-//   to {
-//     transform: rotateY(-360deg);
-//   }
-// }
-
-
-
-
-
-
-
 /* Navbar styles */
-
 .nav-bar{
 
   padding-top: 30px;
@@ -153,37 +66,31 @@ ul{
   display: block;
   gap: 30px;
   text-align: center;
-  padding: 0px 6px 0px 0px;
+  padding: 30px 6px 0px 0px;
  
 
 a{
   text-decoration: none; 
   font-size: 20px;
   display: block;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   @include mediaQuery(600px){
     font-size: 16px;
   }
-  
   }
   }
 
   .logos{
     display: flex;
     justify-content: space-around;
-    padding-top: 60px;
-
-
-   
+    padding-top: 90px;
   }
 }
-
 
 .nav-bar1 {
   display: none;
   align-items: center;
   padding: 15px;
- // background-color: rgb(239, 16, 16);
   color: white;
 }
 
@@ -301,6 +208,7 @@ a{
   .top-tags{
     bottom: auto;
     top: 48px;
+    color:rgb(110, 112, 113);
     @include mediaQuery(600px){
    display: none;
    }
@@ -318,15 +226,13 @@ a{
   }
 
   .bottom-tag-html{
+    color:rgb(110, 112, 113);
     margin-left:-20px ;
     @include mediaQuery(600px){
       display: none;
       }
-
   }
 }
-
-
 
 //HERO SECTION//
 
@@ -480,97 +386,11 @@ a{
    }
  }
 
-//About section
-
-.about{
-  position: absolute;
-  left: 25%;
-  top: 15%;
-  @include mediaQuery(600px){
-    left: 8%;
-   }
-   @include mediaQuery(768px, 601px){
-    left: 23%;
-    
-  }
-
-  h6{
-    color: white;
-    font-size: 20px;
-    @include mediaQuery(768px){
-      font-size: 16px;
-    }
-  }
-
-  h1{
-    color: rgb(255, 196, 72);
-    font-size: 45px;
-    @include mediaQuery(768px){
-      font-size: 23px;
-    }
-  }
-
-  p{
-    color: rgba(255, 255, 255, 0.853);
-    width: 46%;
-    padding-bottom: 40px;
-    line-height: 1.4;
-    font-size: 18px;
-    @include mediaQuery(768px){
-      font-size: 14px;
-      width: 95%;
-      padding-bottom: 25px;
-    }
-  }
-
-  .but2{
-    background-color: black;
-    color: white;
-    border: 1px solid rgb(255, 196, 72);
-    border-radius: 10px;
-    font-size: 18px;
-    padding: 17px 40px 17px 40px;
-    @include mediaQuery(600px){
-      display: none;
-    }
-
-    &:hover{
-      
-      color: black;
-      background-color: rgb(255, 196, 72);
-    }
-  }
-
-  .page-bg-about{
-    width: 100%;
-    //background-color: aqua;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    position: absolute;
-    z-index: 0;
-    top: 185px;
-        @include mediaQuery(600px){
-          top: 433px;
-      }
-   
-    .bgsecond{
-      width: 45%;
-      height: 45%;
-      // @include mediaQuery(768px){
-      //   display: none;
-      // }
-    }
-  }
-
-}
-
-//SKILL SECTION//
-
+//About/SKILL section
 #skill{
   display: flex;
   position: absolute;
-  left: 26%;
+  left: 22%;
   top: 9%;
   @include mediaQuery(600px){
     left: 8%;
@@ -582,48 +402,28 @@ a{
   }
 .skill-txt{
 
+  h6{
+    color: white;
+    font-size: 20px;
+    @include mediaQuery(768px){
+      font-size: 16px;
+    }
+  }
+
   h1{
    // background-color: aqua;
     color: rgb(255, 196, 72);
     font-size: 50px;
    // width: 22%;
-    margin-bottom: 60px;
+    margin-bottom: 45px;
     @include mediaQuery(768px){
       font-size: 30px;
       
     }
-
-     &::before{
-      content: '<h1>';
-      color:rgb(110, 112, 113);
-      opacity: 0.6;
-      position:absolute;
-      font-size: 16px;
-      margin-top: -40px;
-        
-    }
-    &::after{
-      content: '</h1>';
-      color:rgb(110, 112, 113);
-      opacity: 0.6;
-      position:absolute;
-      font-size: 16px;
-      margin-top: 25px;
-      margin-left: 30px;
-      animation: fadeIn 1s 1.7s backwards;
-      opacity: 0.6;
-      @include mediaQuery(600px){
-        margin-left: 13px;
-        margin-top: 14px;
-       }
-        
-    }  
-
   }
 
   .skill-para{
     color: rgba(250, 248, 248, 0.829);
-    font-size: 18px;
     width: 59%;
     line-height: 1.4;
     // margin-bottom: 30px;
@@ -633,22 +433,11 @@ a{
       
     }
 
-    &::before{
-       content: '<p>';
-       color:rgb(110, 112, 113);
-       opacity: 0.6;
-       position:absolute;
-       font-size: 16px;
-       margin-top: -40px;
-        
-     
-  }
 }
 
   .skill-para1{
     color: rgba(243, 240, 240, 0.833);
-   // font-size: 18px;
-   // font-size:calc(0.2rem + 1vw);
+    margin-bottom: 50px;
     width: 59%;
     line-height: 1.4;
     @include mediaQuery(600px){
@@ -686,23 +475,11 @@ a{
       
     }
     
-    &::after{
-      content: '</p>';
-      color:rgb(110, 112, 113);
-      opacity: 0.6;
-      position:absolute;
-      font-size: 16px;
-      margin-top: 4px;
-      margin-left: 25px;
-      animation: fadeIn 1s 1.7s backwards;
-      opacity: 0.6;
-        
-    }
   }
 
 
- 
-  .but1{
+
+  .but2{
     background-color: black;
     color: white;
     border: 1px solid rgb(255, 196, 72);
@@ -800,6 +577,19 @@ a{
   }
 }
 }
+}
+
+// //ABOUTMORE
+.about{
+  background-color: pink;
+  position: absolute;
+  left: 46%;
+  top: 9%;
+
+  h6{
+    text-align: center;
+    color: #fff;
+  }
 }
 
 

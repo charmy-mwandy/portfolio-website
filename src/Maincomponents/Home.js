@@ -3,7 +3,6 @@ import {Outlet} from 'react-router-dom';
 import AnimatedLetters from '../Components/AnimatedLetters';
 import CV from "../Components/dox/Charmaine-CV.pdf";
 
-
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
     const nameArray = ['  ','C','h','a','r','m','a','i','n','e']
@@ -50,36 +49,35 @@ const Home = () => {
             setDelta(500);
         }
     }
-       
         
     return(
         <>
-             <div className="page">
+            <div className="page">
                 <div className="page-bg">
                     <img className='bgfirst' src= 'images/bg-header 1.png'  alt="homeimage"/>
                 </div>
+               
+                <span className='tags top-tags'>
+                    {/* &lt;html&gt; */}
+                    <span className='bottom-tag-html'>&lt;html&gt;</span>
+                    <br />
+                    <span className='top-tag-html'>&lt;body&gt;</span>
+                </span>
+
+                <Outlet />
+
+                <span className='tags bottom-tags'>
+                    &lt;/body&gt;
+                    <br />
+                    <span className='bottom-tag-html'>&lt;/html&gt;</span>
+                </span>
             
-         <span className='tags top-tags'>&lt;html&gt;</span> 
-        <span className='tags top-tags'>
-            &lt;html&gt;
-            <br />
-            <span className='bottom-tag-html'>&lt;body&gt;</span>
-        </span>
+            </div>
 
-        <Outlet />
-
-        <span className='tags bottom-tags'>
-            &lt;/body&gt;
-            <br />
-            <span className='bottom-tag-html'>&lt;/html&gt;</span>
-        </span>
-            
-       </div>
-
- 
        <div className="hero">
             <div className="hero-txt">
                 <h1>
+
                     <span className={letterClass}>H</span>
                     <span className={`${letterClass} _12`}>i,</span>
 
@@ -101,11 +99,7 @@ const Home = () => {
                  <a href={CV} download="Charmaine-CV.pdf"><button className="but1">Download CV</button></a> 
             
             </div> 
-
-            
        </div> 
-       
-        
         
         </>
   
