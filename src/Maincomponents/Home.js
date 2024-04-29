@@ -1,7 +1,7 @@
 import { useState,useEffect } from 'react';
 import {Outlet} from 'react-router-dom';
 import AnimatedLetters from '../Components/AnimatedLetters';
-import CV from "../Components/dox/Charmaine-CV.pdf";
+import CV from "../Components/dox/Charmaine Mwandiringa - Resume.pdf";
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -96,7 +96,7 @@ const Home = () => {
                  
                 </h1>
                 <h3>&lt; {/* Front-end Developer */} {text} &gt;</h3>
-                 <a href={CV} download="Charmaine-CV.pdf"><button className="but1">Download CV</button></a> 
+                 <a href={CV} download="Charmaine Mwandiringa - Resume.pdf">Download CV</a> 
             
             </div> 
        </div> 

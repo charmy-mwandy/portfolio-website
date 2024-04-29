@@ -334,13 +334,14 @@ a{
       }
     }
 
-    .but1{
+    a{
       background-color: black;
       color: white;
       border: 1px solid rgb(255, 196, 72);
       border-radius: 10px;
       font-size: 18px;
       padding: 17px 40px 17px 40px;
+      text-decoration: none;
       @include mediaQuery(600px){
         font-size: 14px;
         padding: 15px 40px 15px 40px;
@@ -391,7 +392,7 @@ a{
   display: flex;
   position: absolute;
   left: 22%;
-  top: 9%;
+  top: 15%;
   @include mediaQuery(600px){
     left: 8%;
    }
@@ -478,21 +479,25 @@ a{
   }
 
 
-
-  .but2{
+a{
     background-color: black;
     color: white;
     border: 1px solid rgb(255, 196, 72);
     border-radius: 10px;
     font-size: 18px;
     padding: 17px 40px 17px 40px;
+    text-decoration: none;
+   
+  
 
     &:hover{
       
       color: black;
       background-color: rgb(255, 196, 72);
     }
-  }
+  
+}
+ 
 }
 
 #myCanvasContainer{
@@ -583,7 +588,7 @@ a{
 .about{
   background-color: pink;
   position: absolute;
-  left: 46%;
+  left: 21%;
   top: 9%;
 
   h6{

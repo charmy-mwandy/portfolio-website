@@ -66,9 +66,11 @@ const Contact = () => {
                         idx={15}/>
                     </h1>
 
-                    <p className='contact-ptxt1'>I’m interested in freelance opportunities - especially ambitious or
-                         large projects.However, if you have other request or question, don’t
-                          hesitate to use the form below.</p>
+                    <p className='contact-ptxt1'>
+                        Don't hesitate to reach out. Whether you have questions, requests, or simply
+                        want to connect, feel free to use the form below. Let's explore opportunities
+                        for collaboration and make a difference together.
+                    </p>
 
                           <div className="contact-form">
                             <form   action="https://formspree.io/f/xeqwvrpb" method='POST'>
