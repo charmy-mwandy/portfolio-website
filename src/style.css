@@ -176,11 +176,6 @@ body {
   top: 48px;
   color: rgb(110, 112, 113);
 }
-@media (max-width: 600px) {
-  .page .top-tags {
-    display: none;
-  }
-}
 .page .tags {
   color: rgb(110, 112, 113);
   opacity: 0.6;
@@ -188,19 +183,9 @@ body {
   bottom: 70px;
   left: 350px;
 }
-@media (max-width: 600px) {
-  .page .tags {
-    display: none;
-  }
-}
 .page .bottom-tag-html {
   color: rgb(110, 112, 113);
   margin-left: -20px;
-}
-@media (max-width: 600px) {
-  .page .bottom-tag-html {
-    display: none;
-  }
 }
 
 .hero {
@@ -212,35 +197,10 @@ body {
   left: 30%;
   top: 15%;
 }
-@media (max-width: 600px) {
-  .hero {
-    top: 25%;
-    left: 10%;
-    width: 80%;
-  }
-}
-@media (max-width: 768px) and (min-width: 601px) {
-  .hero {
-    left: 32%;
-    top: 25%;
-  }
-}
 .hero .hero-txt h1 {
   color: white;
   font-size: 70px;
   line-height: 1.4;
-}
-@media (max-width: 600px) {
-  .hero .hero-txt h1 {
-    font-size: 37px;
-    width: 100%;
-  }
-}
-@media (max-width: 768px) and (min-width: 601px) {
-  .hero .hero-txt h1 {
-    font-size: 3em;
-    line-height: 1.4;
-  }
 }
 .hero .hero-txt h1::before {
   content: "<h1>";
@@ -261,22 +221,11 @@ body {
   animation: fadeIn 1s 1.7s backwards;
   opacity: 0.6;
 }
-@media (max-width: 600px) {
-  .hero .hero-txt h1::after {
-    margin-left: 15px;
-    margin-top: 20px;
-  }
-}
 .hero .hero-txt h3 {
   color: rgb(255, 196, 72);
   font-size: 20px;
   margin-bottom: 60px;
   letter-spacing: 1.9;
-}
-@media (max-width: 600px) {
-  .hero .hero-txt h3 {
-    margin-top: 60px;
-  }
 }
 .hero .hero-txt h3::before {
   content: "<p>";
@@ -305,12 +254,6 @@ body {
   font-size: 18px;
   padding: 17px 40px 17px 40px;
   text-decoration: none;
-}
-@media (max-width: 600px) {
-  .hero .hero-txt a {
-    font-size: 14px;
-    padding: 15px 40px 15px 40px;
-  }
 }
 .hero .hero-txt a:hover {
   color: black;
@@ -481,46 +424,19 @@ body {
   left: 22%;
   top: 15%;
 }
-@media (max-width: 600px) {
-  #skill {
-    left: 8%;
-  }
-}
-@media (max-width: 768px) and (min-width: 601px) {
-  #skill {
-    left: 30%;
-    top: 18%;
-  }
-}
 #skill .skill-txt h6 {
   color: white;
   font-size: 20px;
-}
-@media (max-width: 768px) {
-  #skill .skill-txt h6 {
-    font-size: 16px;
-  }
 }
 #skill .skill-txt h1 {
   color: rgb(255, 196, 72);
   font-size: 50px;
   margin-bottom: 45px;
 }
-@media (max-width: 768px) {
-  #skill .skill-txt h1 {
-    font-size: 30px;
-  }
-}
 #skill .skill-txt .skill-para {
   color: rgba(250, 248, 248, 0.829);
   width: 59%;
   line-height: 1.4;
-}
-@media (max-width: 768px) {
-  #skill .skill-txt .skill-para {
-    font-size: 14px;
-    width: 95%;
-  }
 }
 #skill .skill-txt .skill-para1 {
   color: rgba(243, 240, 240, 0.833);
@@ -528,32 +444,10 @@ body {
   width: 59%;
   line-height: 1.4;
 }
-@media (max-width: 600px) {
-  #skill .skill-txt .skill-para1 {
-    font-size: 14px;
-    width: 95%;
-  }
-}
-@media (max-width: 768px) {
-  #skill .skill-txt .skill-para1 {
-    width: 95%;
-  }
-}
 #skill .skill-txt .skill-para2 {
   color: rgba(243, 240, 240, 0.833);
   width: 59%;
   line-height: 1.4;
-}
-@media (max-width: 600px) {
-  #skill .skill-txt .skill-para2 {
-    font-size: 14px;
-    width: 95%;
-  }
-}
-@media (max-width: 768px) {
-  #skill .skill-txt .skill-para2 {
-    width: 95%;
-  }
 }
 #skill .skill-txt a {
   background-color: black;
@@ -572,11 +466,6 @@ body {
   position: absolute;
   left: 70%;
   top: 38%;
-}
-@media (max-width: 768px) {
-  #skill #myCanvasContainer {
-    display: none;
-  }
 }
 #skill #myCanvasContainer .cubespinner {
   animation-name: spincube;
@@ -635,19 +524,23 @@ body {
     transform: rotateY(-270deg) rotateZ(90deg);
   }
   83% {
-    transform: rotateX(90deg) rotateZ(90deg);
+    transform: rotateX(90deg);
   }
 }
 
 .about {
-  background-color: pink;
   position: absolute;
   left: 21%;
   top: 9%;
 }
-.about h6 {
-  text-align: center;
-  color: #fff;
+.about .about_title {
+  color: rgb(255, 196, 72);
+  font-size: 20px;
+}
+.about .about_paragraphy1, .about .about_paragraphy2, .about .about_paragraphy3, .about .about_paragraphy4 {
+  color: rgba(250, 248, 248, 0.829);
+  width: 95%;
+  line-height: 1.4;
 }
 
 #work {
@@ -655,65 +548,23 @@ body {
   left: 21%;
   top: 10%;
 }
-@media (max-width: 600px) {
-  #work {
-    left: 8%;
-    overflow-y: scroll;
-  }
-  #work body {
-    overflow-y: auto;
-  }
-}
-@media (max-width: 768px) and (min-width: 601px) {
-  #work {
-    left: 19%;
-  }
-}
 #work .work-txt h1 {
   color: rgb(255, 196, 72);
   font-size: 40px;
 }
-@media (max-width: 600px) {
-  #work .work-txt h1 {
-    font-size: 25px;
-  }
-}
 #work .work-txt p {
   color: white;
-}
-@media (max-width: 600px) {
-  #work .work-txt p {
-    font-size: 15px;
-    padding-bottom: 20px;
-  }
 }
 #work .work-gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-@media (max-width: 768px) {
-  #work .work-gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media (max-width: 600px) {
-  #work .work-gallery {
-    grid-template-columns: 1fr;
-  }
-}
 #work .work-image-container {
   position: relative;
   margin: 10px;
   overflow: hidden;
   width: calc(33.33% - 20px);
-}
-@media (max-width: 768px) {
-  #work .work-image-container {
-    width: 90%;
-    margin: 0px;
-  }
 }
 #work .work-image-container .workfirst {
   width: 100%;
@@ -749,27 +600,10 @@ body {
   left: 27%;
   top: 13%;
 }
-@media (max-width: 600px) {
-  .contact-page {
-    display: flex;
-    flex-direction: column;
-    left: 8%;
-  }
-}
-@media (max-width: 768px) and (min-width: 601px) {
-  .contact-page {
-    left: 20%;
-  }
-}
 .contact-page .contact-txt h1 {
   color: rgb(255, 196, 72);
   font-size: 50px;
   margin-bottom: 45px;
-}
-@media (max-width: 600px) {
-  .contact-page .contact-txt h1 {
-    font-size: 32px;
-  }
 }
 .contact-page .contact-txt h1::before {
   content: "<h1>";
@@ -778,11 +612,6 @@ body {
   position: absolute;
   font-size: 16px;
   margin-top: -30px;
-}
-@media (max-width: 600px) {
-  .contact-page .contact-txt h1::before {
-    font-size: 14px;
-  }
 }
 .contact-page .contact-txt h1::after {
   content: "</h1>";
@@ -795,26 +624,11 @@ body {
   animation: fadeIn 1s 1.7s backwards;
   opacity: 0.6;
 }
-@media (max-width: 600px) {
-  .contact-page .contact-txt h1::after {
-    margin-top: 12px;
-    margin-left: 12px;
-    font-size: 14px;
-  }
-}
 .contact-page .contact-txt .contact-ptxt1 {
   color: rgba(243, 240, 240, 0.833);
   font-size: 18px;
   width: 64%;
   line-height: 1.4;
-  margin-bottom: 40px;
-}
-@media (max-width: 600px) {
-  .contact-page .contact-txt .contact-ptxt1 {
-    font-size: 14px;
-    width: 94%;
-    margin-bottom: 20px;
-  }
 }
 .contact-page .contact-txt .contact-ptxt1::before {
   content: "<p>";
@@ -823,11 +637,6 @@ body {
   position: absolute;
   font-size: 16px;
   margin-top: -35px;
-}
-@media (max-width: 600px) {
-  .contact-page .contact-txt .contact-ptxt1::before {
-    font-size: 14px;
-  }
 }
 .contact-page .contact-txt .contact-ptxt1::after {
   content: "</p>";
@@ -840,152 +649,67 @@ body {
   animation: fadeIn 1s 1.7s backwards;
   opacity: 0.6;
 }
-@media (max-width: 600px) {
-  .contact-page .contact-txt .contact-ptxt1::after {
-    font-size: 14px;
-  }
-}
 .contact-page .contact-txt .contact-form {
-  width: 100%;
-  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 0px 70px 20px 0px;
 }
-.contact-page .contact-txt .contact-form::before {
-  content: "<form>";
-  color: rgb(110, 112, 113);
-  opacity: 0.6;
-  position: absolute;
-  font-size: 16px;
-  margin-top: -30px;
-}
-@media (max-width: 600px) {
-  .contact-page .contact-txt .contact-form::before {
-    display: none;
+@media (max-width: 1024px) {
+  .contact-page .contact-txt .contact-form {
+    padding: 0px 10px 20px 0px;
   }
 }
-.contact-page .contact-txt .contact-form::after {
-  content: "</form>";
-  color: rgb(110, 112, 113);
-  opacity: 0.6;
-  position: absolute;
-  font-size: 16px;
-  margin-top: 4px;
-  margin-left: 0;
-  animation: fadeIn 1s 1.7s backwards;
-  opacity: 0.6;
-}
-@media (max-width: 600px) {
-  .contact-page .contact-txt .contact-form::after {
-    display: none;
-  }
-}
-.contact-page .contact-txt .contact-form ul {
-  padding: 0;
-  margin: 0;
-}
-.contact-page .contact-txt .contact-form ul li {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  margin-bottom: 15px;
-  overflow: hidden;
-  display: block;
-  position: relative;
-  opacity: 0;
-  animation: fadeIn 2s 2s;
-  animation-fill-mode: forwards;
-  clear: both;
-}
-.contact-page .contact-txt .contact-form ul li.contact-half {
-  width: 38%;
-  margin-left: 20px;
-  float: left;
-  clear: none;
-}
-@media (max-width: 600px) {
-  .contact-page .contact-txt .contact-form ul li.contact-half {
-    width: 44%;
-  }
-}
-.contact-page .contact-txt .contact-form ul li.contact-half:first-child {
-  margin-left: 0;
-}
-.contact-page .contact-txt .contact-form input[type=text],
-.contact-page .contact-txt .contact-form input[type=subject] {
-  width: 100%;
-  border-radius: 10px;
-  border: 1px solid rgb(43, 42, 42);
-  background-color: rgb(43, 42, 42);
-  height: 50px;
-  font-size: 16px;
-  color: white;
-  padding: 0 20px;
-  box-sizing: border-box;
-}
-.contact-page .contact-txt .contact-form textarea {
-  width: 79%;
-  border-radius: 10px;
-  border: 1px solid rgb(43, 42, 42);
-  background-color: rgb(43, 42, 42);
-  height: 50px;
-  font-size: 16px;
-  color: white;
-  padding: 20px;
-  min-height: 150px;
-  box-sizing: border-box;
-}
-@media (max-width: 600px) {
-  .contact-page .contact-txt .contact-form textarea {
-    width: 93%;
-    min-height: 70px;
-  }
-}
-.contact-page .contact-txt .contact-form .butform {
+.contact-page .contact-txt .name-subject-container {
   display: flex;
-  justify-content: flex-end;
-  padding-right: 138px;
+  gap: 15px;
+  margin-bottom: 15px;
 }
 @media (max-width: 768px) {
-  .contact-page .contact-txt .contact-form .butform {
-    justify-content: flex-start;
+  .contact-page .contact-txt .name-subject-container {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
-.contact-page .contact-txt .contact-form .butform .form-button {
-  color: white;
+.contact-page .contact-txt input[type=text] {
+  width: 100%;
+  padding: 20px 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px solid rgb(43, 42, 42);
+  background-color: rgb(43, 42, 42);
+}
+.contact-page .contact-txt textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px solid rgb(43, 42, 42);
+  background-color: rgb(43, 42, 42);
+  min-height: 150px;
+  font-size: 16px;
+}
+.contact-page .contact-txt .submit-button {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
+}
+.contact-page .contact-txt .submit-button .form-button {
+  color: rgb(137, 134, 134);
+  border: none;
+  cursor: pointer;
   background-color: black;
-  font-size: 18px;
-  padding: 17px 40px 17px 40px;
+  font-size: 16px;
+  padding: 17px 40px;
   border: 1px solid rgb(255, 196, 72);
   border-radius: 10px;
-}
-@media (max-width: 600px) {
-  .contact-page .contact-txt .contact-form .butform .form-button {
-    font-size: 14px;
-    padding: 15px 40px 15px 40px;
-  }
-}
-.contact-page .contact-txt .contact-form .butform .form-button:hover {
-  color: black;
-  background-color: rgb(255, 196, 72);
 }
 .contact-page .contact-email {
   width: 70%;
   padding: 125px 0px 0px 0px;
 }
-@media (max-width: 768px) {
-  .contact-page .contact-email {
-    display: flex;
-    flex-direction: column;
-    padding: 0px 0px 0px 0px;
-  }
-}
 .contact-page .contact-email .txt-1, .contact-page .contact-email .txt-2 {
   color: white;
   font-size: 22px;
-}
-@media (max-width: 600px) {
-  .contact-page .contact-email .txt-1, .contact-page .contact-email .txt-2 {
-    font-size: 16px;
-  }
 }
 .contact-page .contact-email .contact1, .contact-page .contact-email .contact2 {
   display: flex;
@@ -996,20 +720,9 @@ body {
   width: 30px;
   height: 30px;
 }
-@media (max-width: 600px) {
-  .contact-page .contact-email .contact1 img, .contact-page .contact-email .contact2 img {
-    width: 20px;
-    height: 20px;
-  }
-}
 .contact-page .contact-email .contact1 .link, .contact-page .contact-email .contact2 .link {
   color: rgb(255, 196, 72);
   text-decoration: none;
-}
-@media (max-width: 600px) {
-  .contact-page .contact-email .contact1 .link, .contact-page .contact-email .contact2 .link {
-    font-size: 13px;
-  }
 }
 .contact-page .contact-email .contact1 .link:hover, .contact-page .contact-email .contact2 .link:hover {
   color: rgba(255, 197, 72, 0.433);
@@ -1025,31 +738,135 @@ body {
   float: right;
   z-index: -2;
 }
-@media (max-width: 768px) {
-  .contact-page .contact-bg {
-    display: none;
-  }
-}
 .contact-page .contact-bg .contact-img {
   width: 350px;
   height: 350px;
 }
-@media (max-width: 576px) {
-  .contact-page .contact-bg .contact-img {
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+@media (max-width: 600px) {
+  .page .page-bg, .page .top-tags, .page .bottom-tag-html, .page .top-tag-html, .page .tags bottom-tags, .page .tags {
     display: none;
   }
-}
-
-.testimonials {
-  position: absolute;
-  width: 80%;
-  height: 80vh;
-  left: 20%;
-  top: 10%;
-  background-color: palevioletred;
-}
-.testimonials h1 {
-  color: rgb(255, 196, 72);
-  font-size: 45px;
-  text-align: center;
+  .hero {
+    left: 5%;
+    top: 24%;
+  }
+  .hero .hero-txt h1 {
+    font-size: 35px;
+  }
+  .hero .hero-txt h1::after {
+    margin-top: 16px;
+    margin-left: 8px;
+  }
+  .hero .hero-txt h3 {
+    margin: 60px 0;
+  }
+  #skill {
+    left: 6%;
+    top: 8%;
+  }
+  #skill .skill-txt h6 {
+    font-size: 16px;
+  }
+  #skill .skill-txt h1 {
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+  #skill .skill-txt .skill-para {
+    width: 99%;
+    font-size: 14px;
+  }
+  #skill .skill-txt .skill-para1 {
+    margin-bottom: 50px;
+    width: 99%;
+    font-size: 14px;
+  }
+  #skill #myCanvasContainer {
+    display: none;
+  }
+  .about {
+    position: absolute;
+    left: 3%;
+    top: 8%;
+  }
+  .about .about_content {
+    overflow-y: scroll;
+    height: 100%;
+  }
+  .about .about_title {
+    color: rgb(255, 196, 72);
+    font-size: 20px;
+    margin: 20px 0;
+  }
+  .about .about_paragraphy1, .about .about_paragraphy2, .about .about_paragraphy3 {
+    color: rgba(250, 248, 248, 0.829);
+    width: 97%;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .about .about_paragraphy4 {
+    display: none;
+  }
+  #work {
+    position: absolute;
+    left: 8%;
+    top: 10%;
+  }
+  #work .work-txt h1 {
+    font-size: 25px;
+  }
+  #work .work-txt p {
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+  #work .work-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #work .work-image-container {
+    width: 90%;
+    margin: 0px;
+  }
+  .contact-page {
+    left: 7%;
+    top: 13%;
+  }
+  .contact-page .contact-txt h1 {
+    font-size: 30px;
+    margin-bottom: 45px;
+  }
+  .contact-page .contact-txt h1::before {
+    content: "<h1>";
+    color: rgb(110, 112, 113);
+    opacity: 0.6;
+    position: absolute;
+    font-size: 16px;
+    margin-top: -30px;
+  }
+  .contact-page .contact-txt h1::after {
+    content: "</h1>";
+    color: rgb(110, 112, 113);
+    opacity: 0.6;
+    position: absolute;
+    font-size: 16px;
+    margin-top: 25px;
+    margin-left: 30px;
+    animation: fadeIn 1s 1.7s backwards;
+    opacity: 0.6;
+  }
+  .contact-page .contact-txt .contact-ptxt1 {
+    font-size: 16px;
+    width: 95%;
+  }
+  .contact-page .contact-email {
+    display: none;
+  }
+  .contact-page .contact-bg {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */

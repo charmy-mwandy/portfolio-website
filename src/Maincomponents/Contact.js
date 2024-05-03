@@ -1,4 +1,3 @@
-
 import { useState,useRef } from 'react';
 import { Outlet } from 'react-router-dom';
 import AnimatedLetters from '../Components/AnimatedLetters';
@@ -9,11 +8,6 @@ const Contact = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
     const refForm = useRef
   
- /*     useEffect(() => {
-       return setTimeout(() => {
-            setLetterClass('text-animate-hover')
-        }, 3000)
-    }, [])  */
 
      const sendEmail = (e) => {
         e.preventDefault()
@@ -42,9 +36,10 @@ const Contact = () => {
                <div className="page">
           
           <span className='tags top-tags'>
-              &lt;html&gt;
+              {/* &lt;html&gt; */}
+              <span className='bottom-tag-html'>&lt;html&gt;</span>
               <br />
-              <span className='bottom-tag-html'>&lt;body&gt;</span>
+              <span className='top-tag-html'>&lt;body&gt;</span>
           </span>
        
           <Outlet />
@@ -73,7 +68,7 @@ const Contact = () => {
                     </p>
 
                           <div className="contact-form">
-                            <form   action="https://formspree.io/f/xeqwvrpb" method='POST'>
+                            {/* <form   action="https://formspree.io/f/xeqwvrpb" method='POST'>
                                 <ul>
                                     <li className='contact-half'>
                                         <input type="text" name="name" placeholder="Name" required />
@@ -88,7 +83,20 @@ const Contact = () => {
                                       <input type="submit" className='form-button'  value="Send message"/>
                                     </li>
                                 </ul>
-                            </form>
+                            </form> */}
+                            <div class="contact-form">
+                                <form action="https://formspree.io/f/xeqwvrpb" method='POST'>
+                                    <div class="name-subject-container">
+                                        <input type="text" name="name" placeholder="Name" required />
+                                        <input type="text" name="subject" placeholder="Subject" required />
+                                    </div>
+                                        <textarea placeholder="Message" name="message" required></textarea>
+                                        <div class="submit-button">
+                                            <input type="submit" className='form-button' value="Send message"/>
+                                        </div>
+                                       
+                                </form>
+                            </div>
 
                           </div>
                 </div>
@@ -118,3 +126,5 @@ const Contact = () => {
 }
 
 export default Contact; 
+
+

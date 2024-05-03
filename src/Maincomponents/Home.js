@@ -18,7 +18,7 @@ const Home = () => {
  
     const [loopNum,setLoopNum] = useState(0);
     const [isDeleting,setIsDeleting] = useState(false);
-    const toRotate = ["Web Designer","Graphic Designer","Web Developer","Front-end Developer"];
+    const toRotate = ["Web Developer","Front-end Developer","Web Designer","Graphic Designer",];
     const [text,setText] = useState('');
     const [delta,setDelta] = useState(300 - Math.random() * 100);
     const period = 2000;
@@ -58,7 +58,6 @@ const Home = () => {
                 </div>
                
                 <span className='tags top-tags'>
-                    {/* &lt;html&gt; */}
                     <span className='bottom-tag-html'>&lt;html&gt;</span>
                     <br />
                     <span className='top-tag-html'>&lt;body&gt;</span>

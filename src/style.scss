@@ -17,7 +17,6 @@ body {
   padding: 0;
   height: 100vh;
   overflow-y: hidden;
-  //  font-family:  'determination';
 }
 
 /* Navbar styles */
@@ -175,19 +174,11 @@ a{
   }
 }
 
-
-
-
-
 .page{
   width: 100%;
   height: 100%;
   position: absolute;
   padding-bottom: -800px;
- 
-  // @include mediaQuery(600px){
-  // z-index: 3;
-  //  }
 
   .page-bg{
     display: flex;
@@ -196,12 +187,6 @@ a{
 
     .bgfirst{
       width: 39%;
-      // @include mediaQuery(600px){
-      //   display: flex;
-      // }
-      // @include mediaQuery(768px){
-      //   display: none;
-      // }
     }
   }
 
@@ -209,9 +194,6 @@ a{
     bottom: auto;
     top: 48px;
     color:rgb(110, 112, 113);
-    @include mediaQuery(600px){
-   display: none;
-   }
   }
 
   .tags{
@@ -220,17 +202,11 @@ a{
     position:absolute;
     bottom: 70px;
     left: 350px;
-    @include mediaQuery(600px){
-      display: none;
-      }
   }
 
   .bottom-tag-html{
     color:rgb(110, 112, 113);
     margin-left:-20px ;
-    @include mediaQuery(600px){
-      display: none;
-      }
   }
 }
 
@@ -244,34 +220,12 @@ a{
     animation-delay: 1s;
     left: 30%;
     top: 15%;
-   
-    @include mediaQuery(600px){
-     // background-color: blue;
-      top: 25%;
-      left: 10%;
-      width: 80%;
-    
-     }
-     @include mediaQuery(768px, 601px){
-      left: 32%;
-      top: 25%;
-     // background-color: palevioletred;
-      
-    }
+
   .hero-txt{
     h1{
       color: white;
       font-size: 70px;
       line-height: 1.4;
-      @include mediaQuery(600px){
-        font-size: 37px;
-        width: 100%;
-      
-       }
-       @include mediaQuery(768px, 601px){
-        font-size: 3em;
-        line-height: 1.4;
-      }
 
       &::before{
         content: '<h1>';
@@ -292,12 +246,6 @@ a{
         margin-left: 30px;
         animation: fadeIn 1s 1.7s backwards;
         opacity: 0.6;
-        @include mediaQuery(600px){
-          margin-left: 15px;
-          margin-top: 20px;
-        
-         }
-          
       }
     }
   
@@ -306,10 +254,6 @@ a{
       font-size: 20px;
       margin-bottom: 60px;
       letter-spacing: 1.9;
-      @include mediaQuery(600px){
-        margin-top: 60px;
-      
-       }
 
       &::before{
         content: '<p>';
@@ -342,20 +286,13 @@ a{
       font-size: 18px;
       padding: 17px 40px 17px 40px;
       text-decoration: none;
-      @include mediaQuery(600px){
-        font-size: 14px;
-        padding: 15px 40px 15px 40px;
-      
-       }
 
       &:hover{
-        
         color: black;
         background-color: rgb(255, 196, 72);
       }
     }
   }
- 
 }
 
 //Text animated
@@ -365,7 +302,6 @@ a{
   animation: bounceIn 1s 1s;
   animation-fill-mode:forwards ;
    min-width: 10px;
-
  }
 
  .text-animate-hover{
@@ -393,47 +329,25 @@ a{
   position: absolute;
   left: 22%;
   top: 15%;
-  @include mediaQuery(600px){
-    left: 8%;
-   }
-   @include mediaQuery(768px, 601px){
-    left: 30%;
-     top: 18%;
-    
-  }
+
+
 .skill-txt{
 
   h6{
     color: white;
     font-size: 20px;
-    @include mediaQuery(768px){
-      font-size: 16px;
-    }
   }
 
   h1{
-   // background-color: aqua;
     color: rgb(255, 196, 72);
     font-size: 50px;
-   // width: 22%;
     margin-bottom: 45px;
-    @include mediaQuery(768px){
-      font-size: 30px;
-      
-    }
   }
 
   .skill-para{
     color: rgba(250, 248, 248, 0.829);
     width: 59%;
     line-height: 1.4;
-    // margin-bottom: 30px;
-    @include mediaQuery(768px){
-      font-size: 14px;
-      width: 95%;
-      
-    }
-
 }
 
   .skill-para1{
@@ -441,43 +355,14 @@ a{
     margin-bottom: 50px;
     width: 59%;
     line-height: 1.4;
-    @include mediaQuery(600px){
-      font-size: 14px;
-      width: 95%;
-      
-      
-    }
-    @include mediaQuery(768px){
-      //font-size: 16px;
-      width: 95%;
-      //font-size: 16px;
-      
-    }
-    
   }
 
 
   .skill-para2{
     color: rgba(243, 240, 240, 0.833);
-   // font-size: 18px;
-   // font-size:calc(0.2rem + 1vw);
     width: 59%;
-    line-height: 1.4;
-    @include mediaQuery(600px){
-      font-size: 14px;
-      width: 95%;
-      
-      
-    }
-    @include mediaQuery(768px){
-      //font-size: 16px;
-      width: 95%;
-      //font-size: 16px;
-      
-    }
-    
+    line-height: 1.4;   
   }
-
 
 a{
     background-color: black;
@@ -487,32 +372,18 @@ a{
     font-size: 18px;
     padding: 17px 40px 17px 40px;
     text-decoration: none;
-   
-  
 
     &:hover{
-      
       color: black;
       background-color: rgb(255, 196, 72);
     }
-  
 }
- 
 }
 
 #myCanvasContainer{
-
   position: absolute;
   left: 70%;
   top: 38%; 
-
-
-
-  @include mediaQuery(768px){
-   display: none;
-    
-  }
-
 
 .cubespinner{
   animation-name: spincube;
@@ -535,7 +406,6 @@ a{
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 2px 0px yellow ;
-   
   }
 
   .face1{
@@ -576,7 +446,7 @@ a{
       transform: rotateY(-270deg) rotateZ(90deg);
     }
     83%{
-      transform: rotateX(90deg) rotateZ(90deg);
+      transform: rotateX(90deg);
     }
     
   }
@@ -586,84 +456,66 @@ a{
 
 // //ABOUTMORE
 .about{
-  background-color: pink;
+  // background-color: pink;
   position: absolute;
   left: 21%;
   top: 9%;
 
-  h6{
-    text-align: center;
-    color: #fff;
+  .about_title{
+    color: rgb(255, 196, 72);
+    font-size: 20px;
   }
+
+  .about_paragraphy1, .about_paragraphy2, .about_paragraphy3, .about_paragraphy4{
+    color: rgba(250, 248, 248, 0.829);
+    width: 95%;
+    line-height: 1.4;
+  }
+  
 }
-
-
 
 //Work section
 #work{
   position: absolute;
   left: 21%;
   top: 10%;
-  @include mediaQuery(600px){
-    body{
-      overflow-y: auto;
-    }
-    left: 8%;
-    overflow-y: scroll;
-   }
-   @include mediaQuery(768px, 601px){
-
-    left: 19%;
-       
-     }
 
 .work-txt{
   h1{
     color: rgb(255, 196, 72);
     font-size: 40px;
-    @include mediaQuery(600px){
-      font-size: 25px;
-     }
   }
-
 
   p{
     color: white;
-    @include mediaQuery(600px){
-     font-size: 15px;
-     padding-bottom: 20px;
-     }
-    
   }
     }
-
 
 .work-gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; // Ensure equal spacing between the image containers
-  @include mediaQuery(768px){
- display: grid;
-  grid-template-columns:(1fr  1fr);
+//   @include mediaQuery(768px){
+//  display: grid;
+//   grid-template-columns:(1fr  1fr);
 
-  }
-  @include mediaQuery(600px){
-    grid-template-columns:(1fr  );
+//   }
+//   @include mediaQuery(600px){
+//     grid-template-columns:(1fr  );
     
-   }
+//    }
 }
-
 
 .work-image-container {
   position: relative;
   margin: 10px;
   overflow: hidden;
   width: calc(33.33% - 20px); // Adjust width based on the number of images and margin
-  @include mediaQuery(768px){
-    width: calc(90%);
-    margin: 0px;
+  // @include mediaQuery(768px){
+  //   width: calc(90%);
+  //   margin: 0px;
  
-     }
+  //    }
 
   .workfirst {
     width: 100%;
@@ -698,42 +550,21 @@ a{
     }
   }
 }
-
-
 }
 
 //CONTACT-SECTION//
- 
 .contact-page{
   display: flex;
   position: absolute;
   left: 27%;
   top: 13%;
-  @include mediaQuery(600px){
-    display: flex;
-    flex-direction: column;
-    left: 8%;
-    }
- 
-  // @include mediaQuery(600px){
-  //   left: 8%;
-  //  }
-   @include mediaQuery(768px, 601px){
-    left: 20%;
 
-     
-    
-  }
 .contact-txt{
 
   h1{
     color: rgb(255, 196, 72);
     font-size: 50px;
     margin-bottom: 45px;
-    @include mediaQuery(600px){
-      font-size: 32px;
-     }
-
 
      &::before{
       content: '<h1>';
@@ -742,9 +573,6 @@ a{
       position:absolute;
       font-size: 16px;
       margin-top: -30px;
-      @include mediaQuery(600px){
-        font-size: 14px;
-       }
         
     }
     &::after{
@@ -757,14 +585,7 @@ a{
       margin-left: 30px;
       animation: fadeIn 1s 1.7s backwards;
       opacity: 0.6;
-      @include mediaQuery(600px){
-        margin-top: 12px;
-        margin-left: 12px;
-        font-size: 14px;
-       }
-        
     } 
-
   }
 
   .contact-ptxt1{
@@ -772,12 +593,7 @@ a{
     font-size: 18px;
     width: 64%;
     line-height: 1.4;
-    margin-bottom: 40px;
-    @include mediaQuery(600px){
-      font-size: 14px;
-      width: 94%;
-      margin-bottom: 20px;
-     }
+   // margin-bottom: 40px;
 
     &::before{
       content: '<p>';
@@ -785,12 +601,7 @@ a{
       opacity: 0.6;
       position:absolute;
       font-size: 16px;
-      margin-top: -35px;
-      @include mediaQuery(600px){
-        font-size: 14px;
-       
-       }
-        
+      margin-top: -35px;  
     } 
     &::after{
       content: '</p>';
@@ -802,176 +613,87 @@ a{
       margin-left: 25px;
       animation: fadeIn 1s 1.7s backwards;
       opacity: 0.6;
-      @include mediaQuery(600px){
-        font-size: 14px;
-       
-       }
     }
   }
 
-  .contact-form{
-  
-    
-    &::before{
-      content: '<form>';
-      color:rgb(110, 112, 113);
-      opacity: 0.6;
-      position:absolute;
-      font-size: 16px;
-      margin-top: -30px;
-      @include mediaQuery(600px){
-        display: none;
-       
-       }
-        
-    } 
-    &::after{
-      content: '</form>';
-      color:rgb(110, 112, 113);
-      opacity: 0.6;
-      position:absolute;
-      font-size: 16px;
-      margin-top: 4px;
-      margin-left: 0;
-      animation: fadeIn 1s 1.7s backwards;
-      opacity: 0.6;
-      @include mediaQuery(600px){
-       display: none;
-       
-       }
-        
+  .contact-form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 0px  70px 20px  0px;
+    @include mediaQuery(1024px){
+      padding: 0px  10px 20px  0px;
     }
-
+   }
+   
+   .name-subject-container {
+    display: flex;
+ 
+    gap:15px;
+    margin-bottom: 15px;
+     @include mediaQuery(768px){
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+   }
+   
+   input[type="text"]{
     width: 100%;
-    margin-top: 20px;
+    padding:20px 20px;
+    box-sizing: border-box;
+    border-radius: 10px ;
+    border: 1px solid rgb(43, 42, 42) ;
+    background-color: rgb(43, 42, 42);
+   }
 
-    ul{
-      padding: 0;
-      margin: 0;
-    
-  
-      li{
-        padding: 0;
-        margin: 0;
-        list-style: none;
-        margin-bottom: 15px;
-        overflow: hidden;
-        display: block;
-        position: relative;
-        opacity: 0;
-        animation: fadeIn 2s 2s;
-        animation-fill-mode: forwards;
-        clear: both;
-      }
-
-      li.contact-half{
-        width: 38%;
-        margin-left: 20px;
-        float: left;
-        clear: none;
-        @include mediaQuery(600px){
-          width: 44%;
-          
-          
-        }
-        // @include mediaQuery(768px){
-        //   width: 42%;
-          
-          
-        // }
-
-        &:first-child{
-          margin-left: 0;
-        }
-      }
-    }
-    input[type='text'],
-    input[type='subject']{
-      width: 100%;
-      border-radius: 10px ;
-      border: 1px solid rgb(43, 42, 42) ;
-      background-color: rgb(43, 42, 42);
-      height: 50px;
+    textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px ;
+    border: 1px solid rgb(43, 42, 42) ;
+    background-color: rgb(43, 42, 42);
+    min-height: 150px;
+    font-size: 16px;
+   }
+   
+   .submit-button{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+    .form-button {
+      color: rgb(137, 134, 134);
+      border: none;
+      cursor: pointer;
+      background-color: black;
       font-size: 16px;
-      color: white;
-      padding: 0 20px;
-      box-sizing: border-box;
-    }
+      padding: 17px 40px;
+      border: 1px solid rgb(255, 196, 72);
+      border-radius: 10px;
+     }
+   }
+ 
+   
 
-    textarea{
-      width: 79%;
-      border-radius: 10px ;
-      border: 1px solid rgb(43, 42, 42) ;
-      background-color: rgb(43, 42, 42);
-      height: 50px;
-      font-size: 16px;
-      color: white;
-      padding: 20px;
-      min-height: 150px;
-      box-sizing: border-box;
-      @include mediaQuery(600px){
-        width: 93%;
-        min-height: 70px;
-        
-        
-      }
-      // @include mediaQuery(768px){
-      //   width: 87%;
-        
-        
-      // }
-    }
-    .butform{
-      display: flex;
-      justify-content:flex-end ;
-      padding-right: 138px;
-      @include mediaQuery(768px){
-        justify-content:flex-start ;
-        
-        
-      }
-      .form-button{
-        color: white;
-        background-color: black;
-        font-size: 18px;
-        padding: 17px 40px 17px 40px;
-        border: 1px solid rgb(255, 196, 72);
-        border-radius: 10px;
-        @include mediaQuery(600px){
-          font-size: 14px;
-          padding: 15px 40px 15px 40px;
-         }
-    
-  
-        &:hover{
-          color: black;
-          background-color: rgb(255, 196, 72);
-        }
-      }
 
-    }
 
-  }
+
+
+   
 }
 
 .contact-email{
   width: 70%;
   padding: 125px 0px 0px 0px;
-  @include mediaQuery(768px){
-   // display:none;
-   display: flex;
-   flex-direction: column;
-   padding: 0px 0px 0px 0px;
-    
-    
-  }
+  // @include mediaQuery(768px){
+  //  display: flex;
+  //  flex-direction: column;
+  //  padding: 0px 0px 0px 0px;
+  // }
 
   .txt-1, .txt-2{
     color: white;
     font-size: 22px;
-    @include mediaQuery(600px){
-      font-size: 16px;
-   }
+
   }
 
   .contact1, .contact2{
@@ -981,18 +703,15 @@ a{
     img{
       width: 30px;
       height: 30px;
-      @include mediaQuery(600px){
-        width: 20px;
-      height: 20px;
-     }
+    //   @include mediaQuery(600px){
+    //     width: 20px;
+    //   height: 20px;
+    //  }
     }
 
     .link{
       color:rgb(255, 196, 72);
       text-decoration: none;
-      @include mediaQuery(600px){
-        font-size: 13px;
-     }
 
       &:hover{
         color:rgba(255, 197, 72, 0.433);
@@ -1011,37 +730,197 @@ a{
   top: 150px;
   float: right;
   z-index: -2;
-  @include mediaQuery(768px){
-    display: none;
- 
-    
-  }
+  // @include mediaQuery(768px){
+  //   display: none;
+  // }
   
   .contact-img{
     width: 350px;
     height: 350px;
-    @include mediaQuery(576px){
+    // @include mediaQuery(576px){
+    //   display: none;
+    // }
+  }
+}
+
+}
+
+
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+
+@media (max-width: 600px) {
+
+  //HOME PAGE
+  .page{
+    .page-bg ,.top-tags, .bottom-tag-html, .top-tag-html, .tags bottom-tags, .tags{
       display: none;
     }
   }
-}
+   
+//HERO SECTION//
+.hero{
+  left: 5%;
+  top: 24%;
 
-}
-
-.testimonials{
-  position: absolute;
-  width: 80%;
-  height: 80vh;
-  left: 20%;
-  top: 10%;
-  background-color: palevioletred;
-
+.hero-txt{
   h1{
-    color:rgb(255, 196, 72);
-    font-size: 45px;
-    text-align: center;
+    font-size: 35px;
+
+    &::after{
+      margin-top: 16px;
+      margin-left: 8px;
+    }
+  }
+
+  h3{
+    margin: 60px 0;
   }
 }
+}
+
+//About/SKILL section
+#skill{
+  left: 6%;
+  top: 8%;
+
+.skill-txt{
+  h6{
+    font-size: 16px;
+  }
+  h1{
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+  .skill-para{
+    width: 99%;
+    font-size: 14px;
+}
+  .skill-para1{
+    margin-bottom: 50px;
+    width: 99%;
+    font-size: 14px;
+  }
+}
+#myCanvasContainer{
+  display: none;
+}
+}
+
+// //ABOUTMORE
+.about{
+  position: absolute;
+  left: 3%;
+  top: 8%;
+
+  .about_content{
+    overflow-y: scroll;
+    height: 100%;
+  }
+
+  .about_title{
+    color: rgb(255, 196, 72);
+    font-size: 20px;
+    margin: 20px 0;
+  }
+
+  .about_paragraphy1, .about_paragraphy2, .about_paragraphy3{
+    color: rgba(250, 248, 248, 0.829);
+    width: 97%;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .about_paragraphy4{
+    display: none;
+  }
+  
+}
+
+//Work section
+#work{
+  position: absolute;
+  left: 8%;
+  top: 10%;
+
+.work-txt{
+  h1{
+    font-size: 25px;
+  }
+
+  p{
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+
+    }
+
+.work-gallery {
+  display: grid;
+    grid-template-columns:(1fr  );
+}
+
+.work-image-container {
+    width: calc(90%);
+    margin: 0px;
+}
+}
+
+//CONTACT-SECTION//
+.contact-page{
+  left: 7%;
+  top: 13%;
+
+.contact-txt{
+
+  h1{
+    font-size: 30px;
+    margin-bottom: 45px;
+
+     &::before{
+      content: '<h1>';
+      color:rgb(110, 112, 113);
+      opacity: 0.6;
+      position:absolute;
+      font-size: 16px;
+      margin-top: -30px;
+        
+    }
+    &::after{
+      content: '</h1>';
+      color:rgb(110, 112, 113);
+      opacity: 0.6;
+      position:absolute;
+      font-size: 16px;
+      margin-top: 25px;
+      margin-left: 30px;
+      animation: fadeIn 1s 1.7s backwards;
+      opacity: 0.6;
+    } 
+  }
+
+  .contact-ptxt1{
+    font-size: 16px;
+    width: 95%;
+  }
+
+}
+
+.contact-email{
+  display: none;
+}
+
+.contact-bg{
+  display: none;
+}
+
+}
 
 
+ 
+ }
 
