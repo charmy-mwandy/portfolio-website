@@ -11,14 +11,13 @@ body {
   background-color: rgb(8, 8, 8);
   margin: 0;
   padding: 0;
-  height: 100vh;
   overflow-y: hidden;
 }
 
 /* Navbar styles */
 .nav-bar {
   padding-top: 30px;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   position: absolute;
   width: 230px;
   height: 100%;
@@ -27,7 +26,7 @@ body {
   z-index: 3;
   min-height: 500px;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .nav-bar {
     display: none;
   }
@@ -120,7 +119,7 @@ body {
 }
 
 /* Media query for small screens */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .nav-bar1 {
     display: flex;
   }
@@ -654,7 +653,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   padding: 0px 70px 20px 0px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 600px) {
   .contact-page .contact-txt .contact-form {
     padding: 0px 10px 20px 0px;
   }
@@ -841,32 +840,250 @@ M E D I A  Q U E R I E S
     margin-bottom: 45px;
   }
   .contact-page .contact-txt h1::before {
-    content: "<h1>";
-    color: rgb(110, 112, 113);
-    opacity: 0.6;
-    position: absolute;
     font-size: 16px;
     margin-top: -30px;
   }
   .contact-page .contact-txt h1::after {
-    content: "</h1>";
-    color: rgb(110, 112, 113);
-    opacity: 0.6;
-    position: absolute;
     font-size: 16px;
     margin-top: 25px;
     margin-left: 30px;
-    animation: fadeIn 1s 1.7s backwards;
-    opacity: 0.6;
   }
   .contact-page .contact-txt .contact-ptxt1 {
     font-size: 16px;
     width: 95%;
   }
-  .contact-page .contact-email {
+  .contact-page .contact-email, .contact-page .contact-bg {
     display: none;
   }
-  .contact-page .contact-bg {
+}
+/* Media query for screen sizes below 768px and above 601px */
+@media screen and (max-width: 767px) and (min-width: 602px) {
+  .page .page-bg .bgfirst {
+    width: 39%;
+  }
+  .page .top-tags, .page .bottom-tag-html, .page .top-tag-html, .page .tags bottom-tags, .page .tags {
     display: none;
   }
+  .hero {
+    left: 8%;
+    top: 24%;
+  }
+  .hero .hero-txt h1 {
+    font-size: 40px;
+  }
+  .hero .hero-txt h1::after {
+    margin-top: 20px;
+    margin-left: 18px;
+  }
+  .hero .hero-txt h3 {
+    margin: 70px 0;
+  }
+  #skill {
+    top: 8%;
+    left: 0%;
+    padding: 0 50px;
+  }
+  #skill .skill-txt h6 {
+    font-size: 16px;
+  }
+  #skill .skill-txt h1 {
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+  #skill .skill-txt .skill-para {
+    width: 100%;
+    font-size: 14px;
+  }
+  #skill .skill-txt .skill-para1 {
+    margin-bottom: 50px;
+    width: 100%;
+    font-size: 14px;
+  }
+  #skill #myCanvasContainer {
+    display: none;
+  }
+  .about {
+    position: absolute;
+    left: 0%;
+    padding: 0 50px;
+    top: 8%;
+  }
+  .about .about_content {
+    overflow-y: scroll;
+    height: 100%;
+  }
+  .about .about_title {
+    font-size: 20px;
+    margin: 20px 0;
+  }
+  .about .about_paragraphy1, .about .about_paragraphy2, .about .about_paragraphy3, .about .about_paragraphy4 {
+    width: 100%;
+    font-size: 14px;
+  }
+  #work {
+    position: absolute;
+    left: 0%;
+    top: 10%;
+    padding: 0 50px;
+    width: 85%;
+  }
+  #work .work-txt h1 {
+    font-size: 25px;
+  }
+  #work .work-txt p {
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+  #work .work-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #work .work-image-container {
+    width: 100%;
+    margin: 0px;
+  }
+  .contact-page {
+    left: 0%;
+    top: 13%;
+    padding: 0 50px;
+  }
+  .contact-page .contact-txt h1 {
+    font-size: 30px;
+    margin-bottom: 45px;
+  }
+  .contact-page .contact-txt h1::before {
+    font-size: 16px;
+    margin-top: -30px;
+  }
+  .contact-page .contact-txt h1::after {
+    font-size: 16px;
+    margin-top: 25px;
+    margin-left: 30px;
+  }
+  .contact-page .contact-txt .contact-ptxt1 {
+    font-size: 16px;
+    width: 95%;
+  }
+  .contact-page .contact-txt .contact-form {
+    padding: 0px 0px 0px 0px;
+  }
+  .contact-page .contact-email, .contact-page .contact-bg {
+    display: none;
+  }
+}
+/* Media query for screen sizes below 992px and above 769px */
+@media screen and (max-width: 992px) and (min-width: 769px) {
+  .page .page-bg .bgfirst {
+    width: 39%;
+  }
+  .page .top-tags, .page .bottom-tag-html, .page .top-tag-html, .page .tags bottom-tags, .page .tags {
+    display: none;
+  }
+  .hero {
+    left: 8%;
+    top: 24%;
+  }
+  .hero .hero-txt h1 {
+    font-size: 40px;
+  }
+  .hero .hero-txt h1::after {
+    margin-top: 20px;
+    margin-left: 18px;
+  }
+  .hero .hero-txt h3 {
+    margin: 70px 0;
+  }
+  #skill {
+    top: 8%;
+    left: 0%;
+    padding: 0 50px;
+  }
+  #skill .skill-txt h6 {
+    font-size: 16px;
+  }
+  #skill .skill-txt h1 {
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+  #skill .skill-txt .skill-para {
+    width: 100%;
+    font-size: 14px;
+  }
+  #skill .skill-txt .skill-para1 {
+    margin-bottom: 50px;
+    width: 100%;
+    font-size: 14px;
+  }
+  #skill #myCanvasContainer {
+    display: none;
+  }
+  .about {
+    position: absolute;
+    left: 0%;
+    padding: 0 50px;
+    top: 8%;
+  }
+  .about .about_content {
+    overflow-y: scroll;
+    height: 100%;
+  }
+  .about .about_title {
+    font-size: 20px;
+    margin: 20px 0;
+  }
+  .about .about_paragraphy1, .about .about_paragraphy2, .about .about_paragraphy3, .about .about_paragraphy4 {
+    width: 100%;
+    font-size: 14px;
+  }
+  #work {
+    position: absolute;
+    left: 0%;
+    top: 10%;
+    padding: 0 50px;
+    width: 85%;
+  }
+  #work .work-txt h1 {
+    font-size: 25px;
+  }
+  #work .work-txt p {
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+  #work .work-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #work .work-image-container {
+    width: 100%;
+    margin: 0px;
+  }
+  .contact-page {
+    left: 0%;
+    top: 13%;
+    padding: 0 50px;
+  }
+  .contact-page .contact-txt h1 {
+    font-size: 30px;
+    margin-bottom: 45px;
+  }
+  .contact-page .contact-txt h1::before {
+    font-size: 16px;
+    margin-top: -30px;
+  }
+  .contact-page .contact-txt h1::after {
+    font-size: 16px;
+    margin-top: 25px;
+    margin-left: 30px;
+  }
+  .contact-page .contact-txt .contact-ptxt1 {
+    font-size: 16px;
+    width: 95%;
+  }
+  .contact-page .contact-txt .contact-form {
+    padding: 0px 0px 0px 0px;
+  }
+  .contact-page .contact-email, .contact-page .contact-bg {
+    display: none;
+  }
+  /* Add more CSS rules as needed */
 }/*# sourceMappingURL=style.css.map */
