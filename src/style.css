@@ -704,7 +704,9 @@ body {
 }
 .contact-page .contact-email {
   width: 70%;
-  padding: 125px 0px 0px 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .contact-page .contact-email .txt-1, .contact-page .contact-email .txt-2 {
   color: white;
@@ -1005,17 +1007,8 @@ M E D I A  Q U E R I E S
     font-size: 25px;
     margin-bottom: 30px;
   }
-  #skill .skill-txt .skill-para {
-    width: 100%;
-    font-size: 14px;
-  }
-  #skill .skill-txt .skill-para1 {
-    margin-bottom: 50px;
-    width: 100%;
-    font-size: 14px;
-  }
-  #skill #myCanvasContainer {
-    display: none;
+  #skill .skill-txt .skill-para, #skill .skill-txt .skill-para1 {
+    width: 50%;
   }
   .about {
     position: absolute;
@@ -1051,7 +1044,7 @@ M E D I A  Q U E R I E S
   }
   #work .work-gallery {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
   #work .work-image-container {
     width: 100%;
@@ -1060,7 +1053,7 @@ M E D I A  Q U E R I E S
   .contact-page {
     left: 0%;
     top: 13%;
-    padding: 0 50px;
+    padding: 0 30px;
   }
   .contact-page .contact-txt h1 {
     font-size: 30px;
@@ -1082,7 +1075,10 @@ M E D I A  Q U E R I E S
   .contact-page .contact-txt .contact-form {
     padding: 0px 0px 0px 0px;
   }
-  .contact-page .contact-email, .contact-page .contact-bg {
+  .contact-page .contact-email {
+    padding: 0 0px 0 25px;
+  }
+  .contact-page .contact-bg {
     display: none;
   }
   /* Add more CSS rules as needed */

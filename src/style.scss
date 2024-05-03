@@ -494,15 +494,6 @@ a{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; // Ensure equal spacing between the image containers
-//   @include mediaQuery(768px){
-//  display: grid;
-//   grid-template-columns:(1fr  1fr);
-
-//   }
-//   @include mediaQuery(600px){
-//     grid-template-columns:(1fr  );
-    
-//    }
 }
 
 .work-image-container {
@@ -510,11 +501,6 @@ a{
   margin: 10px;
   overflow: hidden;
   width: calc(33.33% - 20px); // Adjust width based on the number of images and margin
-  // @include mediaQuery(768px){
-  //   width: calc(90%);
-  //   margin: 0px;
- 
-  //    }
 
   .workfirst {
     width: 100%;
@@ -592,7 +578,6 @@ a{
     font-size: 18px;
     width: 64%;
     line-height: 1.4;
-   // margin-bottom: 40px;
 
     &::before{
       content: '<p>';
@@ -674,7 +659,10 @@ a{
 
 .contact-email{
   width: 70%;
-  padding: 125px 0px 0px 0px;
+  // padding: 125px 0px 0px 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 
   .txt-1, .txt-2{
     color: white;
@@ -1084,20 +1072,9 @@ M E D I A  Q U E R I E S
     font-size: 25px;
     margin-bottom: 30px;
   }
-  .skill-para{
-    width: 100%;
-    font-size: 14px;
-}
-  .skill-para1{
-    margin-bottom: 50px;
-    width: 100%;
-    font-size: 14px;
-  }
-}
-#myCanvasContainer{
-  display: none;
-}
-}
+  .skill-para, .skill-para1{
+    width: 50%;
+}}}
 
 // //ABOUTMORE
 .about{
@@ -1131,10 +1108,8 @@ M E D I A  Q U E R I E S
   width: 85%;
 
 .work-txt{
-  h1{
-    font-size: 25px;
-  }
-
+  h1{ font-size: 25px;  }
+    
   p{
     font-size: 14px;
     margin-bottom: 40px;
@@ -1144,7 +1119,7 @@ M E D I A  Q U E R I E S
 
 .work-gallery {
   display: grid;
-    grid-template-columns:(1fr  );
+    grid-template-columns:(1fr 1fr);
 }
 
 .work-image-container {
@@ -1157,9 +1132,10 @@ M E D I A  Q U E R I E S
 .contact-page{
   left: 0%;
   top: 13%;
-  padding:0 50px;
+  padding:0 30px;
 
 .contact-txt{
+ 
 
   h1{
     font-size: 30px;
@@ -1186,9 +1162,13 @@ M E D I A  Q U E R I E S
    }
 }
 
-.contact-email, .contact-bg{
+ .contact-email{
+  padding:0 0px 0 25px;
+  } 
+.contact-bg{
   display: none;
-} }
+}
+}
 
 /* Add more CSS rules as needed */
 }
