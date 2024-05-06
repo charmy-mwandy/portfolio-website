@@ -6,6 +6,9 @@ import { FaGithub } from "react-icons/fa";
 const Navbar = () => {
 
     const [isNavOpen, setIsNavOpen] = useState(false);
+    const [isCollapsed, setIsCollapsed] = useState(false);
+
+    
 
     const toggleNav = () => {
       setIsNavOpen(!isNavOpen);

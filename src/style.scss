@@ -576,7 +576,7 @@ a{
   .contact-ptxt1{
     color: rgba(243, 240, 240, 0.833);
     font-size: 18px;
-    width: 64%;
+    width: 80%;
     line-height: 1.4;
 
     &::before{
@@ -603,7 +603,7 @@ a{
   .contact-form {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    padding: 0px  70px 20px  0px;
+    padding: 0px  50px 20px  0px;
     @include mediaQuery(600px){
       padding: 0px  10px 20px  0px;
     }
@@ -1172,3 +1172,73 @@ M E D I A  Q U E R I E S
 
 /* Add more CSS rules as needed */
 }
+
+
+/* Media query for screen sizes below 1200px and above 993px */
+@media screen and (max-width: 1200px) and (min-width: 993px) {
+  /* Navbar styles */
+.nav-bar{
+  width: 160px;
+.logo{
+  img{
+    width: 70px;
+  }
+}
+p{
+  font-size: 20px;
+}
+ul{
+a{
+  font-size: 18px;
+}
+}
+}
+
+  .page{
+    .tags{
+      left: 220px;
+    }
+  }
+  
+
+  //HERO SECTION//
+.hero{
+  left: 25%;
+  .hero-txt{
+    h1{
+      font-size: 60px;
+    }} }
+   
+//About/SKILL section
+#skill{
+  left: 20%;
+  top: 15%;
+
+.skill-txt{
+  h1{
+    font-size: 50px;
+  }}}
+
+
+//Work section
+#work{
+  left: 20%;
+}
+
+
+
+//CONTACT-SECTION//
+.contact-page{
+  left: 22%;
+
+.contact-txt{
+  h1{
+    font-size: 45px;
+  }
+  .contact-form {
+    padding: 0px  40px 20px  0px;
+   }
+}
+}
+
+ }

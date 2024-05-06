@@ -626,7 +626,7 @@ body {
 .contact-page .contact-txt .contact-ptxt1 {
   color: rgba(243, 240, 240, 0.833);
   font-size: 18px;
-  width: 64%;
+  width: 80%;
   line-height: 1.4;
 }
 .contact-page .contact-txt .contact-ptxt1::before {
@@ -651,7 +651,7 @@ body {
 .contact-page .contact-txt .contact-form {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  padding: 0px 70px 20px 0px;
+  padding: 0px 50px 20px 0px;
 }
 @media (max-width: 600px) {
   .contact-page .contact-txt .contact-form {
@@ -1082,4 +1082,48 @@ M E D I A  Q U E R I E S
     display: none;
   }
   /* Add more CSS rules as needed */
+}
+/* Media query for screen sizes below 1200px and above 993px */
+@media screen and (max-width: 1200px) and (min-width: 993px) {
+  /* Navbar styles */
+  .nav-bar {
+    width: 160px;
+  }
+  .nav-bar .logo img {
+    width: 70px;
+  }
+  .nav-bar p {
+    font-size: 20px;
+  }
+  .nav-bar ul a {
+    font-size: 18px;
+  }
+  .page .tags {
+    left: 220px;
+  }
+  .hero {
+    left: 25%;
+  }
+  .hero .hero-txt h1 {
+    font-size: 60px;
+  }
+  #skill {
+    left: 20%;
+    top: 15%;
+  }
+  #skill .skill-txt h1 {
+    font-size: 50px;
+  }
+  #work {
+    left: 20%;
+  }
+  .contact-page {
+    left: 22%;
+  }
+  .contact-page .contact-txt h1 {
+    font-size: 45px;
+  }
+  .contact-page .contact-txt .contact-form {
+    padding: 0px 40px 20px 0px;
+  }
 }/*# sourceMappingURL=style.css.map */
