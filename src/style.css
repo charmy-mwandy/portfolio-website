@@ -3,10 +3,6 @@
   font-family: "basier";
   src: url(../src/fonts/basiersquaremono-regular-webfont.woff);
 }
-@font-face {
-  font-family: "determination";
-  src: url(../src/fonts/DTM-Sans.otf);
-}
 body {
   background-color: rgb(8, 8, 8);
   margin: 0;
@@ -791,30 +787,21 @@ M E D I A  Q U E R I E S
     display: none;
   }
   .about {
-    position: absolute;
     left: 3%;
     top: 8%;
   }
-  .about .about_content {
-    overflow-y: scroll;
-    height: 100%;
-  }
   .about .about_title {
-    color: rgb(255, 196, 72);
     font-size: 20px;
     margin: 20px 0;
   }
   .about .about_paragraphy1, .about .about_paragraphy2, .about .about_paragraphy3 {
-    color: rgba(250, 248, 248, 0.829);
     width: 97%;
     font-size: 14px;
-    line-height: 1.4;
   }
   .about .about_paragraphy4 {
     display: none;
   }
   #work {
-    position: absolute;
     left: 8%;
     top: 10%;
   }
@@ -905,14 +892,9 @@ M E D I A  Q U E R I E S
     display: none;
   }
   .about {
-    position: absolute;
     left: 0%;
     padding: 0 50px;
     top: 8%;
-  }
-  .about .about_content {
-    overflow-y: scroll;
-    height: 100%;
   }
   .about .about_title {
     font-size: 20px;
@@ -1011,14 +993,9 @@ M E D I A  Q U E R I E S
     width: 50%;
   }
   .about {
-    position: absolute;
     left: 0%;
     padding: 0 50px;
     top: 8%;
-  }
-  .about .about_content {
-    overflow-y: scroll;
-    height: 100%;
   }
   .about .about_title {
     font-size: 20px;
@@ -1029,7 +1006,6 @@ M E D I A  Q U E R I E S
     font-size: 14px;
   }
   #work {
-    position: absolute;
     left: 0%;
     top: 10%;
     padding: 0 50px;
@@ -1081,7 +1057,6 @@ M E D I A  Q U E R I E S
   .contact-page .contact-bg {
     display: none;
   }
-  /* Add more CSS rules as needed */
 }
 /* Media query for screen sizes below 1200px and above 993px */
 @media screen and (max-width: 1200px) and (min-width: 993px) {

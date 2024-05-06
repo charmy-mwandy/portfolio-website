@@ -6,22 +6,15 @@
   src: url(../src/fonts/basiersquaremono-regular-webfont.woff);
 }
 
-@font-face {
-  font-family: 'determination';
-  src: url(../src/fonts/DTM-Sans.otf);
-}
-
 body {
   background-color: rgb(8, 8, 8);
   margin: 0;
   padding: 0;
-  // height: 100vh;
   overflow-y: hidden;
 }
 
 /* Navbar styles */
 .nav-bar{
-
   padding-top: 30px;
   background-color: rgb(0, 0, 0);
   position: absolute;
@@ -46,7 +39,6 @@ body {
     @include mediaQuery(576px){
       width: 60px;
     }
-    
   }
 }
 
@@ -65,7 +57,6 @@ ul{
   gap: 30px;
   text-align: center;
   padding: 30px 6px 0px 0px;
- 
 
 a{
   text-decoration: none; 
@@ -74,9 +65,7 @@ a{
   margin-bottom: 30px;
   @include mediaQuery(600px){
     font-size: 16px;
-  }
-  }
-  }
+}}  }
 
   .logos{
     display: flex;
@@ -124,7 +113,6 @@ a{
   gap: 30px;
 
 }
-
 
 /* Media query for small screens */
 @media (max-width: 992px) {
@@ -210,7 +198,6 @@ a{
 }
 
 //HERO SECTION//
-
 .hero{
     position: absolute;
     will-change: contents;
@@ -273,7 +260,6 @@ a{
         margin-left: 25px;
         animation: fadeIn 1s 1.8s backwards;
         opacity: 0.6;
-          
       }
     }
 
@@ -774,26 +760,21 @@ M E D I A  Q U E R I E S
 
 // //ABOUTMORE
 .about{
-  position: absolute;
   left: 3%;
   top: 8%;
 
-  .about_content{
-    overflow-y: scroll;
-    height: 100%;
-  }
+  // .about_content{
+  //   height: 100%;
+  // }
 
   .about_title{
-    color: rgb(255, 196, 72);
     font-size: 20px;
     margin: 20px 0;
   }
 
   .about_paragraphy1, .about_paragraphy2, .about_paragraphy3{
-    color: rgba(250, 248, 248, 0.829);
     width: 97%;
     font-size: 14px;
-    line-height: 1.4;
   }
 
   .about_paragraphy4{
@@ -803,7 +784,6 @@ M E D I A  Q U E R I E S
 
 //Work section
 #work{
-  position: absolute;
   left: 8%;
   top: 10%;
 
@@ -931,15 +911,9 @@ M E D I A  Q U E R I E S
   
   // //ABOUTMORE
   .about{
-    position: absolute;
     left: 0%;
     padding:0 50px;
     top: 8%;
-  
-    .about_content{
-      overflow-y: scroll;
-      height: 100%;
-    }
   
     .about_title{
       font-size: 20px;
@@ -1021,7 +995,6 @@ M E D I A  Q U E R I E S
   } }
 }
 
-
  /* Media query for screen sizes below 992px and above 769px */
  @media screen and (max-width: 992px) and (min-width: 769px) {
 
@@ -1078,15 +1051,9 @@ M E D I A  Q U E R I E S
 
 // //ABOUTMORE
 .about{
-  position: absolute;
   left: 0%;
   padding:0 50px;
   top: 8%;
-
-  .about_content{
-    overflow-y: scroll;
-    height: 100%;
-  }
 
   .about_title{
     font-size: 20px;
@@ -1101,7 +1068,6 @@ M E D I A  Q U E R I E S
 
 //Work section
 #work{
-  position: absolute;
   left: 0%;
   top: 10%;
   padding:0 50px;
@@ -1169,13 +1135,12 @@ M E D I A  Q U E R I E S
   display: none;
 }
 }
-
-/* Add more CSS rules as needed */
 }
 
 
 /* Media query for screen sizes below 1200px and above 993px */
 @media screen and (max-width: 1200px) and (min-width: 993px) {
+
   /* Navbar styles */
 .nav-bar{
   width: 160px;
@@ -1200,7 +1165,6 @@ a{
     }
   }
   
-
   //HERO SECTION//
 .hero{
   left: 25%;
@@ -1225,8 +1189,6 @@ a{
   left: 20%;
 }
 
-
-
 //CONTACT-SECTION//
 .contact-page{
   left: 22%;
@@ -1240,5 +1202,4 @@ a{
    }
 }
 }
-
  }
