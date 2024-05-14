@@ -11,7 +11,7 @@ const AboutMe = () => {
                 Motivated by a commitment to continuous growth, I've ventured into mobile application development,
                 self-teaching React-Native.js and Typescript. This self-directed learning journey has been instrumental
                 in broadening my expertise, culminating in the development of personal projects and valuable practical
-                experience gained through projects at Dynamic Wow Solutions, where I am currently employed.
+                experience gained through projects at Dynamic Wow Solutions.
             </p>
              
             <p className='about_paragraphy2'>
